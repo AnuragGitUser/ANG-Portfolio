@@ -1,29 +1,22 @@
 import { useState, useEffect } from "react";
-
 import profilePhoto from "@/assets/profile-photo.jpg";
-
 const HeroSection = () => {
   const [projectCount, setProjectCount] = useState(0);
   const [techCount, setTechCount] = useState(0);
-
   useEffect(() => {
     // Animate counters
     const projectTimer = setInterval(() => {
-      setProjectCount((prev) => (prev < 10 ? prev + 1 : 10));
+      setProjectCount(prev => prev < 10 ? prev + 1 : 10);
     }, 100);
-
     const techTimer = setInterval(() => {
-      setTechCount((prev) => (prev < 5 ? prev + 1 : 5));
+      setTechCount(prev => prev < 5 ? prev + 1 : 5);
     }, 150);
-
     return () => {
       clearInterval(projectTimer);
       clearInterval(techTimer);
     };
   }, []);
-
-  return (
-    <section className="min-h-screen flex items-center justify-center pt-20">
+  return <section className="min-h-screen flex items-center justify-center pt-20">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
@@ -64,27 +57,18 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl">
-                <img
-                  src={profilePhoto}
-                  alt="Kunal Katira - Backend Developer"
-                  className="w-full h-full object-cover"
-                />
+                <img src={profilePhoto} alt="Kunal Katira - Backend Developer" className="w-full h-full object-cover" />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full animate-pulse"></div>
+              
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent rounded-full animate-pulse delay-300"></div>
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="flex flex-col items-center mt-16 animate-bounce">
-          <p className="text-sm text-muted-foreground mb-2">Scroll down</p>
-          <div className="w-px h-8 bg-border"></div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
