@@ -9,7 +9,6 @@ const Header = () => {
     { icon: Home, href: "#hero", label: "Home" },
     { icon: User, href: "#about", label: "About" },
     { icon: Wrench, href: "#skills", label: "Skills" },
-    { icon: Briefcase, href: "#services", label: "Services" },
     { icon: Briefcase, href: "#portfolio", label: "Portfolio" },
     { icon: Mail, href: "#contact", label: "Contact" }
   ];
