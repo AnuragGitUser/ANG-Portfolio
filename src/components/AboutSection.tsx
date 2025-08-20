@@ -46,9 +46,20 @@ const AboutSection = () => {
 
           {/* Education */}
           <div className="space-y-8">
-            
+            <h2 className="heading-text">Education</h2>
             <div className="space-y-6">
-              {education.map((edu, index) => {})}
+              {education.map((edu, index) => (
+                <Card key={index} className="p-6">
+                  <div className="space-y-2">
+                    <h3 className="subheading-text">{edu.degree}</h3>
+                    <p className="text-primary font-medium">{edu.school}</p>
+                    <div className="flex justify-between text-sm text-muted-foreground">
+                      <span>{edu.period}</span>
+                      <span>CGPA: {edu.cgpa}</span>
+                    </div>
+                  </div>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
