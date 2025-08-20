@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
               {/* Decorative elements */}
               
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent rounded-full animate-pulse delay-300"></div>
+              
             </div>
           </div>
         </div>
