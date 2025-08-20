@@ -26,9 +26,7 @@ const HeroSection = () => {
                 Backend Developer
               </p>
               <h1 className="hero-text text-balance">Hello</h1>
-              <p className="text-xl text-muted-foreground max-w-lg">
-                — I'm Kunal Katira, Fueled by passion, I craft secure and scalable backends that power modern apps.
-              </p>
+              <p className="text-xl text-muted-foreground max-w-lg">— I'm Anurag Gurubhetti, fueled by passion, I craft secure &amp; scalable backends that power modern apps.</p>
             </div>
 
             <div className="space-y-4">
