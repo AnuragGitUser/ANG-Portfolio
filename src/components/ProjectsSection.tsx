@@ -80,8 +80,9 @@ const ProjectsSection = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="bg-white text-black border-black hover:bg-black hover:text-white" asChild>
               <a href="https://github.com/Kunal-1610" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
                 View All Projects
               </a>
             </Button>
