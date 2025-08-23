@@ -33,7 +33,7 @@ const AboutSection = () => {
             </p>
             <Button variant="cta" size="cta" className="mt-6">
               <Download className="mr-2 h-4 w-4" />
-              Download Resume
+              Resume
             </Button>
           </div>
 
