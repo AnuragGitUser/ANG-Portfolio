@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 const AboutSection = () => {
   const features = [{
     title: "Full-Stack Development",
@@ -29,6 +31,10 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground max-w-4xl">
               Backend developer with hands-on experience in Java, Spring Boot, and developing secure, scalable RESTful APIs using Spring Security. Skilled in multiple programming languages and frameworks, with a strong focus on delivering robust, maintainable, and performance-driven solutions.
             </p>
+            <Button variant="cta" size="cta" className="mt-6">
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </Button>
           </div>
 
           {/* Features */}
