@@ -1,15 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Monitor, Shield } from "lucide-react";
 const AboutSection = () => {
   const features = [{
     title: "Full-Stack Development",
     description: "From backend APIs to frontend interfaces, I build complete solutions.",
-    icon: "💻"
+    icon: Monitor
   }, {
     title: "Security First",
     description: "Implementing JWT, OAuth2, and role-based authentication systems.",
-    icon: "🔒"
+    icon: Shield
   }];
   const education = [{
     degree: "Master of Computer Applications (MCA)",
@@ -41,7 +41,9 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {features.map((feature, index) => <Card key={index} className="p-6 hover:shadow-lg smooth-transition">
                 <div className="flex items-start space-x-4">
-                  <div className="text-3xl">{feature.icon}</div>
+                  <div className="text-3xl">
+                    <feature.icon className="w-8 h-8 text-primary" />
+                  </div>
                   <div className="space-y-2">
                     <h3 className="subheading-text">{feature.title}</h3>
                     <p className="text-muted-foreground">{feature.description}</p>
