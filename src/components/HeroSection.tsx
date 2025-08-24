@@ -40,11 +40,11 @@ const HeroSection = () => {
 
             {/* Stats */}
             <div className="flex gap-8 pt-8">
-              <div className="text-center">
+              <div className="text-left">
                 <div className="text-4xl font-bold text-primary">+{projectCount}</div>
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
               </div>
-              <div className="text-center">
+              <div className="text-left">
                 <div className="text-4xl font-bold text-primary">+{techCount}</div>
                 <p className="text-sm text-muted-foreground">Technologies Mastered</p>
               </div>
