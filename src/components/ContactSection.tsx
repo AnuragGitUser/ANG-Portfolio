@@ -99,6 +99,13 @@ const ContactSection = () => {
             </Card>
           </div>
         </div>
+        
+        {/* Footer */}
+        <div className="text-center pt-12 mt-12 border-t border-border">
+          <p className="text-sm text-muted-foreground">
+            © 2025 Anurag Gurubhetti. Built with passion and precision.
+          </p>
+        </div>
       </div>
     </section>
   );
