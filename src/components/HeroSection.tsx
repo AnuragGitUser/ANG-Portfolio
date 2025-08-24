@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+
 const HeroSection = () => {
   const [projectCount, setProjectCount] = useState(0);
   const [techCount, setTechCount] = useState(0);
@@ -55,7 +55,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl">
-                <img src={profilePhoto} alt="Kunal Katira - Backend Developer" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Backend Developer" className="w-full h-full object-cover" />
               </div>
               {/* Decorative elements */}
               
