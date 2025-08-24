@@ -1,11 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Monitor, Shield } from "lucide-react";
+import { Download, Code, Shield } from "lucide-react";
 const AboutSection = () => {
   const features = [{
     title: "Full-Stack Development",
     description: "From backend APIs to frontend interfaces, I build complete solutions.",
-    icon: Monitor
+    icon: Code
   }, {
     title: "Security First",
     description: "Implementing JWT, OAuth2, and role-based authentication systems.",
