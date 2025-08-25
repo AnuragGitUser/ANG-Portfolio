@@ -57,7 +57,7 @@ const ContactSection = () => {
                           <IconComponent className="w-5 h-5 text-primary mt-1" />
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
-                            <p className="text-sm text-muted-foreground">{contact.value}</p>
+                            <p className="text-sm text-muted-foreground break-words">{contact.value}</p>
                           </div>
                         </div>
                       </a>
