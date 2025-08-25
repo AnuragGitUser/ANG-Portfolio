@@ -15,8 +15,8 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/katira-kunal",
-      href: "https://linkedin.com/in/katira-kunal"
+      value: "linkedin.com/in/anuraggurubhetti",
+      href: "https://linkedin.com/in/anuraggurubhetti"
     },
     {
       icon: Github,
