@@ -2,7 +2,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, X } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
+import xLogo from "@/assets/x-logo.png";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -25,7 +26,7 @@ const ContactSection = () => {
       href: "https://github.com/AnuragGitUser/"
     },
     {
-      icon: X,
+      icon: "xLogo",
       label: "X",
       value: "x.com/AnuragNG974",
       href: "https://x.com/AnuragNG974"
@@ -55,12 +56,15 @@ const ContactSection = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
-                  const IconComponent = contact.icon;
                   return (
                     <Card key={index} className="p-4 hover:shadow-lg smooth-transition">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
-                          <IconComponent className="w-5 h-5 text-primary mt-1" />
+                          {contact.icon === "xLogo" ? (
+                            <img src={xLogo} alt="X Logo" className="w-5 h-5 mt-1" />
+                          ) : (
+                            <contact.icon className="w-5 h-5 text-primary mt-1" />
+                          )}
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
                             <p className="text-sm text-muted-foreground break-all leading-relaxed">{contact.value}</p>
