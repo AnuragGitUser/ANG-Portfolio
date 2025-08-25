@@ -21,8 +21,8 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/Kunal-1610",
-      href: "https://github.com/Kunal-1610"
+      value: "github.com/AnuragGitUser/",
+      href: "https://github.com/AnuragGitUser/"
     }
   ];
 
