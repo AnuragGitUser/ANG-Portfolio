@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Linkedin, Github, X } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -25,8 +25,8 @@ const ContactSection = () => {
       href: "https://github.com/AnuragGitUser/"
     },
     {
-      icon: Twitter,
-      label: "X (Twitter)",
+      icon: X,
+      label: "X",
       value: "x.com/AnuragNG974",
       href: "https://x.com/AnuragNG974"
     }
