@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       demoUrl: "#"
     },
     {
-      title: "Somras – Online Alcohol Ordering App",
+      title: "Cloud-Based Document Collaboration",
       description: "Android application with MySQL backend, Volley API integration, and secure authentication system for seamless alcohol ordering experience.",
       technologies: ["Android", "MySQL", "Volley API", "Java"],
       codeUrl: "https://github.com/Kunal-1610",
