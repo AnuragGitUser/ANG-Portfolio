@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Github } from "lucide-react";
-import xLogo from "@/assets/x-logo.png";
+import xLogo from "@/assets/x-logo.svg";
 
 const ContactSection = () => {
   const contactInfo = [
