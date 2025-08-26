@@ -6,7 +6,7 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Secure REST API – User Authentication System",
+      title: "E-Commerce Web App",
       description: "Built with Spring Boot, Spring Security, JWT, OAuth2. Features stateless authentication, role-based access control, and Google social login integration.",
       technologies: ["Spring Boot", "Spring Security", "JWT", "OAuth2", "MySQL"],
       codeUrl: "https://github.com/Kunal-1610",
