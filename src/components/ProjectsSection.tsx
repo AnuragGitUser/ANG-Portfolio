@@ -14,7 +14,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Cloud-Based Document Collaboration",
-      description: "Android application with MySQL backend, Volley API integration, and secure authentication system for seamless alcohol ordering experience.",
+      description: "Real-time collaborative platform enabling teams to create, edit, and share documents seamlessly. Features version control, concurrent editing, and secure cloud storage with role-based permissions.",
       technologies: ["Android", "MySQL", "Volley API", "Java"],
       codeUrl: "https://github.com/Kunal-1610",
       demoUrl: "#"
