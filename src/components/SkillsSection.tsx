@@ -8,7 +8,7 @@ const SkillsSection = () => {
     },
     {
       title: "Frameworks/Libraries",
-      skills: ["Spring Boot", "Spring Data JPA", "Django", "Pandas", "NumPy"]
+      skills: ["Spring Boot", "Spring Data JPA", "Pandas", "NumPy"]
     },
     {
       title: "Security",
@@ -16,11 +16,11 @@ const SkillsSection = () => {
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git", "GitHub", "Postman", "Docker", "Maven", "REST APIs"]
+      skills: ["Git", "GitHub", "REST APIs"]
     },
     {
       title: "Web Technologies",
-      skills: ["HTML", "CSS", "Bootstrap", "JSP"]
+      skills: ["HTML", "CSS", "JSP"]
     }
   ];
 
