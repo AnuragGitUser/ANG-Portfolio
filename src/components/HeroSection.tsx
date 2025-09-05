@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 const HeroSection = () => {
   const [projectCount, setProjectCount] = useState(0);
   const [techCount, setTechCount] = useState(0);
@@ -22,9 +21,7 @@ const HeroSection = () => {
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <p className="text-muted-foreground font-medium tracking-wide uppercase">
-                Backend Developer
-              </p>
+              <p className="text-muted-foreground font-medium tracking-wide uppercase">SOFTWARE ENGINEER</p>
               <h1 className="hero-text text-balance">Hello</h1>
               <p className="text-xl text-muted-foreground max-w-lg">— I'm Anurag Gurubhetti, fueled by passion, I craft secure &amp; scalable backends that power modern apps.</p>
             </div>
