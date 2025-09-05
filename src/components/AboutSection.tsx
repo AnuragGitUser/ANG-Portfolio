@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Code, Shield } from "lucide-react";
 const AboutSection = () => {
   const features = [{
-    title: "Full-Stack Development",
+    title: "Front-end Development",
     description: "From backend APIs to frontend interfaces, I build complete solutions.",
     icon: Code
   }, {
