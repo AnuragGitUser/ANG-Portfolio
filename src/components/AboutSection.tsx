@@ -4,7 +4,7 @@ import { Download, Code, Shield } from "lucide-react";
 const AboutSection = () => {
   const features = [{
     title: "Front-end Development",
-    description: "From backend APIs to frontend interfaces, I build complete solutions.",
+    description: "Creating responsive, interactive user interfaces with modern frameworks and libraries.",
     icon: Code
   }, {
     title: "Security First",
