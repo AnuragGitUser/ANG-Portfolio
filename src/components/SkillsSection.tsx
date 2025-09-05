@@ -15,10 +15,6 @@ const SkillsSection = () => {
       skills: ["Spring Security", "JWT", "OAuth2", "BCrypt"]
     },
     {
-      title: "Databases",
-      skills: ["MySQL", "PostgreSQL", "MongoDB"]
-    },
-    {
       title: "Tools & Technologies",
       skills: ["Git", "GitHub", "Postman", "Docker", "Maven", "REST APIs"]
     },
