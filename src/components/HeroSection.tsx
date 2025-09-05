@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-balance">Frontend Developer | C/C++/Python/Java </h2>
               <p className="text-muted-foreground max-w-lg">
-                Crafting robust RESTful APIs with Java & Spring Boot, focused on security and scalability.
+                Crafting robust Python APIs with Java & Spring Boot, focused on security and scalability.
               </p>
             </div>
 
