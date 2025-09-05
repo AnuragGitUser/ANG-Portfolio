@@ -16,7 +16,7 @@ const SkillsSection = () => {
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git", "GitHub", "REST APIs"]
+      skills: ["Git", "GitHub", "REST APIs", "Data Analysis", "Data Structures & Algorithms"]
     },
     {
       title: "Web Technologies",
