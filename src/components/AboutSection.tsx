@@ -28,9 +28,7 @@ const AboutSection = () => {
           {/* About Me */}
           <div className="space-y-8">
             <h2 className="heading-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-4xl">
-              Backend developer with hands-on experience in Java, Spring Boot, and developing secure, scalable RESTful APIs using Spring Security. Skilled in multiple programming languages and frameworks, with a strong focus on delivering robust, maintainable, and performance-driven solutions.
-            </p>
+            <p className="text-lg text-muted-foreground max-w-4xl">Frontend developer with hands-on experience in Java, Spring Boot, and developing secure, scalable Python APIs using Spring Security. Skilled in multiple programming languages and frameworks, with a strong focus on delivering robust, maintainable, and performance-driven solutions.</p>
             <Button variant="cta" size="cta" className="mt-6 rounded-2xl">
               <Download className="mr-2 h-4 w-4" />
               Resume
