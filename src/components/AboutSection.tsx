@@ -1,7 +1,44 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Code, Shield } from "lucide-react";
+import jsPDF from 'jspdf';
 const AboutSection = () => {
+  const handleDownloadResume = () => {
+    const pdf = new jsPDF();
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx?.drawImage(img, 0, 0);
+      
+      const imgData = canvas.toDataURL('image/jpeg', 1.0);
+      
+      // Calculate dimensions to fit the page
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgAspectRatio = img.width / img.height;
+      const pdfAspectRatio = pdfWidth / pdfHeight;
+      
+      let finalWidth = pdfWidth;
+      let finalHeight = pdfHeight;
+      
+      if (imgAspectRatio > pdfAspectRatio) {
+        finalHeight = pdfWidth / imgAspectRatio;
+      } else {
+        finalWidth = pdfHeight * imgAspectRatio;
+      }
+      
+      pdf.addImage(imgData, 'JPEG', 0, 0, finalWidth, finalHeight);
+      
+      // Open in new tab
+      const pdfOutput = pdf.output('bloburl');
+      window.open(pdfOutput, '_blank');
+    };
+    img.src = '/lovable-uploads/d82d6619-34f5-4494-9a5f-c42edf85f3ee.png';
+  };
   const features = [{
     title: "Front-end Development",
     description: "Creating responsive, interactive user interfaces with modern frameworks and libraries.",
@@ -29,7 +66,7 @@ const AboutSection = () => {
           <div className="space-y-8">
             <h2 className="heading-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-4xl">Frontend developer with hands-on experience in Java, Spring Boot, and developing secure, scalable Python APIs using Spring Security. Skilled in multiple programming languages and frameworks, with a strong focus on delivering robust, maintainable, and performance-driven solutions.</p>
-            <Button variant="cta" size="cta" className="mt-6 rounded-2xl">
+            <Button variant="cta" size="cta" className="mt-6 rounded-2xl" onClick={handleDownloadResume}>
               <Download className="mr-2 h-4 w-4" />
               Resume
             </Button>
