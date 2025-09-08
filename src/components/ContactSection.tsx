@@ -37,7 +37,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex justify-center">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="max-w-2xl">
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="space-y-4">
