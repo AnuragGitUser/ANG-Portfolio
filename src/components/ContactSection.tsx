@@ -4,37 +4,29 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Github } from "lucide-react";
 import xLogo from "@/assets/x-logo.svg";
-
 const ContactSection = () => {
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "anuraggurubhetti@gmail.com",
-      href: "mailto:anuraggurubhetti@gmail.com"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/anuraggurubhetti",
-      href: "https://linkedin.com/in/anuraggurubhetti"
-    },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "github.com/AnuragGitUser/",
-      href: "https://github.com/AnuragGitUser/"
-    },
-    {
-      icon: "xLogo",
-      label: "X",
-      value: "x.com/AnuragNG974",
-      href: "https://x.com/AnuragNG974"
-    }
-  ];
-
-  return (
-    <section id="contact" className="section-padding bg-secondary/30">
+  const contactInfo = [{
+    icon: Mail,
+    label: "Email",
+    value: "anuraggurubhetti@gmail.com",
+    href: "mailto:anuraggurubhetti@gmail.com"
+  }, {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "linkedin.com/in/anuraggurubhetti",
+    href: "https://linkedin.com/in/anuraggurubhetti"
+  }, {
+    icon: Github,
+    label: "GitHub",
+    value: "github.com/AnuragGitUser/",
+    href: "https://github.com/AnuragGitUser/"
+  }, {
+    icon: "xLogo",
+    label: "X",
+    value: "x.com/AnuragNG974",
+    href: "https://x.com/AnuragNG974"
+  }];
+  return <section id="contact" className="section-padding bg-secondary/30">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -56,51 +48,23 @@ const ContactSection = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
-                  return (
-                    <Card key={index} className="p-4 hover:shadow-lg smooth-transition">
+                return <Card key={index} className="p-4 hover:shadow-lg smooth-transition">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
-                          {contact.icon === "xLogo" ? (
-                            <img src={xLogo} alt="X Logo" className="w-5 h-5 mt-1 brightness-0 dark:invert" />
-                          ) : (
-                            <contact.icon className="w-5 h-5 text-primary mt-1" />
-                          )}
+                          {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-5 h-5 mt-1 brightness-0 dark:invert" /> : <contact.icon className="w-5 h-5 text-primary mt-1" />}
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
                             <p className="text-sm text-muted-foreground break-all leading-relaxed">{contact.value}</p>
                           </div>
                         </div>
                       </a>
-                    </Card>
-                  );
-                })}
+                    </Card>;
+              })}
               </div>
             </div>
 
             {/* Contact Form */}
-            <Card className="p-8">
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">Name</label>
-                  <Input id="name" placeholder="Your name" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">Message</label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project..." 
-                    className="min-h-32"
-                  />
-                </div>
-                <Button variant="cta" size="cta" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </Card>
+            
           </div>
         </div>
         
@@ -111,8 +75,6 @@ const ContactSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
