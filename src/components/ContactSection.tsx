@@ -36,7 +36,8 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 justify-center">
+          <div className="flex justify-center">
+            <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="space-y-4">
@@ -65,8 +66,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Contact Form */}
-            
+            </div>
           </div>
         </div>
         
