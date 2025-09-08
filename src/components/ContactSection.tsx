@@ -36,7 +36,7 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 justify-center">
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="space-y-4">
@@ -51,7 +51,9 @@ const ContactSection = () => {
                 return <Card key={index} className="p-4 hover:shadow-lg smooth-transition">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
-                          {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-5 h-5 mt-1 brightness-0 dark:invert" /> : <contact.icon className="w-5 h-5 text-primary mt-1" />}
+                          <div className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center mt-1">
+                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-4 h-4 brightness-0 dark:invert" /> : <contact.icon className="w-4 h-4 text-primary" />}
+                          </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
                             <p className="text-sm text-muted-foreground break-all leading-relaxed">{contact.value}</p>
