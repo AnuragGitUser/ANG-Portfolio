@@ -40,12 +40,10 @@ const ContactSection = () => {
             <div className="max-w-2xl">
             {/* Contact Info */}
             <div className="space-y-8">
-              <div className="space-y-4">
-                <h3 className="subheading-text">Get In Touch</h3>
-                <p className="text-muted-foreground">
-                  Whether you have a project in mind or just want to chat about technology, I'm always excited to connect with fellow developers and potential collaborators.
-                </p>
-              </div>
+              <h3 className="subheading-text">Get In Touch</h3>
+              <p className="text-muted-foreground">
+                Whether you have a project in mind or just want to chat about technology, I'm always excited to connect with fellow developers and potential collaborators.
+              </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
