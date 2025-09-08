@@ -1,26 +1,27 @@
 import { Badge } from "@/components/ui/badge";
+import { Coffee, Settings, Shield, Code } from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["Java", "Python", "C/C++"]
+      skills: ["Java", "Python", "C/C++", "HTML", "CSS"],
+      icon: Coffee
     },
     {
       title: "Frameworks/Libraries",
-      skills: ["Spring Boot", "Spring Data JPA", "Pandas", "NumPy"]
+      skills: ["Spring Boot", "Spring Data JPA", "Pandas", "NumPy"],
+      icon: Code
     },
     {
       title: "Security",
-      skills: ["Spring Security", "JWT", "OAuth2", "BCrypt"]
+      skills: ["Spring Security", "JWT", "OAuth2", "BCrypt"],
+      icon: Shield
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git", "GitHub", "REST APIs", "Data Analysis", "Data Structures & Algorithms"]
-    },
-    {
-      title: "Web Technologies",
-      skills: ["HTML", "CSS", "JSP"]
+      skills: ["Git", "GitHub", "REST APIs", "Data Analysis", "Data Structures & Algorithms", "VS Code", "IntelliJ IDEA", "PyCharm", "Linux"],
+      icon: Settings
     }
   ];
 
@@ -38,7 +39,12 @@ const SkillsSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
               <div key={index} className="space-y-4">
-                <h3 className="subheading-text text-primary">{category.title}</h3>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center">
+                    <category.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <h3 className="subheading-text text-primary">{category.title}</h3>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <Badge 
