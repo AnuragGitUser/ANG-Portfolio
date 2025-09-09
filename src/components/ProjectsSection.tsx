@@ -77,7 +77,7 @@ const ProjectsSection = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="outline" className="bg-black text-white border-black hover:bg-gray-800 hover:text-white" asChild>
+            <Button variant="outline" className="bg-black text-white border-black hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200 dark:hover:text-black" asChild>
               <a href="https://github.com/AnuragGitUser" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-1" />
                 View All Projects
