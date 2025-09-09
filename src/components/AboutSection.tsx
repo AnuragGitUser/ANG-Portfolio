@@ -76,7 +76,7 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {features.map((feature, index) => <Card key={index} className="p-6 hover:shadow-lg smooth-transition">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 min-w-[3rem] min-h-[3rem] bg-muted rounded-lg flex items-center justify-center flex-shrink-0 aspect-square">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div className="space-y-2">
