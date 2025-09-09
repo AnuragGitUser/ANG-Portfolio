@@ -34,9 +34,6 @@ const ProjectsSection = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="heading-text">Featured Projects</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my work in backend development, security implementation, and full-stack solutions
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
