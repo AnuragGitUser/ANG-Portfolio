@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Code, Shield } from "lucide-react";
+import { Download, Code, Cloud } from "lucide-react";
 import jsPDF from 'jspdf';
 const AboutSection = () => {
   const handleDownloadResume = () => {
@@ -46,7 +46,7 @@ const AboutSection = () => {
   }, {
     title: "AI & Cloud Technologies",
     description: "Exploring AI applications and cloud-based solutions for scalable software development.",
-    icon: Shield
+    icon: Cloud
   }];
   const education = [{
     degree: "Bachelor of Technology (B.Tech) - Computer Engineering",
