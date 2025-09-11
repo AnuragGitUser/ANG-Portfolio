@@ -36,7 +36,7 @@ const SkillsSection = () => {
               <div key={index} className="space-y-4">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
-                    <category.icon className="w-6 h-6 text-primary" />
+                    <category.icon className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="subheading-text text-primary">{category.title}</h3>
                 </div>
