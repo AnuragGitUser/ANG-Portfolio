@@ -6,24 +6,38 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Web App",
-      description: "Built with Spring Boot, Spring Security, JWT, OAuth2. Features stateless authentication, role-based access control, and Google social login integration.",
-      technologies: ["Spring Boot", "Spring Security", "JWT", "OAuth2", "MySQL"],
-      codeUrl: "https://github.com/Kunal-1610",
+      title: "Portfolio Website",
+      description: "Exploring the dimensions of Full Stack Web Development with modern responsive design and interactive features.",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
     },
     {
-      title: "Cloud-Based Document Collaboration",
-      description: "Real-time collaborative platform enabling teams to create, edit, and share documents seamlessly. Features version control, concurrent editing, and secure cloud storage with role-based permissions.",
-      technologies: ["Android", "MySQL", "Volley API", "Java"],
-      codeUrl: "https://github.com/Kunal-1610",
+      title: "Cloud-Based Document Collaboration (DuoCollab)",
+      description: "Built DuoCollab, a web-app for collaboration of documents over cloud with real-time editing and sharing capabilities.",
+      technologies: ["Cloud Computing", "Web Development", "JavaScript"],
+      codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
     },
     {
-      title: "Dream Home – Online Real Estate Marketplace",
-      description: "J2EE web application using JSP/Servlets with MySQL database. Features property search filters, user registration/login, and property management.",
-      technologies: ["J2EE", "JSP/Servlets", "MySQL", "Bootstrap"],
-      codeUrl: "https://github.com/Kunal-1610",
+      title: "Glass-Morphism Calculator",
+      description: "Experimenting with various JavaScript effects combined with HTML and CSS to create a modern glass-morphism calculator interface.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      codeUrl: "https://github.com/AnuragGitUser",
+      demoUrl: "#"
+    },
+    {
+      title: "AgriMarket - Cloud-based Market Analyzer",
+      description: "Built AgriMarket for agriculture support for farmers with price & weather prediction using AI and cloud technologies.",
+      technologies: ["AI", "Cloud Computing", "Data Analysis"],
+      codeUrl: "https://github.com/AnuragGitUser",
+      demoUrl: "#"
+    },
+    {
+      title: "Basic Text Editor",
+      description: "Terminal based project in C programming language with essential text editing functionalities and file operations.",
+      technologies: ["C Programming", "Terminal"],
+      codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
     }
   ];
@@ -36,7 +50,7 @@ const ProjectsSection = () => {
             <h2 className="heading-text">Featured Projects</h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="p-6 hover:shadow-xl smooth-transition hover:scale-105">
                 <div className="space-y-6">

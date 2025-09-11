@@ -40,24 +40,24 @@ const AboutSection = () => {
     img.src = '/lovable-uploads/d82d6619-34f5-4494-9a5f-c42edf85f3ee.png';
   };
   const features = [{
-    title: "Front-end Development",
-    description: "Creating responsive, interactive user interfaces with modern frameworks and libraries.",
+    title: "Full-Stack Development",
+    description: "Building end-to-end web applications with modern technologies and cloud integration.",
     icon: Code
   }, {
-    title: "Security First",
-    description: "Implementing JWT, OAuth2, and role-based authentication systems.",
+    title: "AI & Cloud Technologies",
+    description: "Exploring AI applications and cloud-based solutions for scalable software development.",
     icon: Shield
   }];
   const education = [{
-    degree: "Master of Computer Applications (MCA)",
-    school: "Dharmsinh Desai University, Nadiad",
-    period: "Expected March 2026",
-    cgpa: "8.0"
+    degree: "Bachelor of Technology (B.Tech) - Computer Engineering",
+    school: "A. G. Patil Institute of Technology, Solapur",
+    period: "Nov 2022 - Present",
+    cgpa: "Ongoing"
   }, {
-    degree: "Bachelor of Computer Applications (BCA)",
-    school: "Dr. V.R. Godhaniya IT College (BKNMU), Porbandar",
-    period: "April 2024",
-    cgpa: "8.86"
+    degree: "XII (State Board)",
+    school: "Shri Sangameshwar Autonomous College, Solapur",
+    period: "Aug 2020 - Mar 2022",
+    cgpa: "68.33%"
   }];
   return <section id="about" className="section-padding bg-secondary/30">
       <div className="section-container">
@@ -65,7 +65,7 @@ const AboutSection = () => {
           {/* About Me */}
           <div className="space-y-8">
             <h2 className="heading-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-4xl">Frontend developer with hands-on experience in Java, Spring Boot, and developing secure, scalable Python APIs using Spring Security. Skilled in multiple programming languages and frameworks, with a strong focus on delivering robust, maintainable, and performance-driven solutions.</p>
+            <p className="text-lg text-muted-foreground max-w-4xl">Computer Engineering student at A.G. Patil Institute of Technology, Solapur with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications and data analysis tools with a strong foundation in object-oriented programming and data structures.</p>
             <Button variant="cta" size="cta" className="mt-6 rounded-2xl" onClick={handleDownloadResume}>
               <Download className="mr-2 h-4 w-4" />
               Resume

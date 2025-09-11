@@ -5,23 +5,18 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["Java", "Python", "C/C++", "HTML", "CSS"],
+      skills: ["Java", "Python", "C", "C++", "HTML", "CSS"],
       icon: Coffee
     },
     {
-      title: "Frameworks/Libraries",
-      skills: ["Spring Boot", "Spring Data JPA", "Pandas", "NumPy"],
-      icon: Code
-    },
-    {
-      title: "Security",
-      skills: ["Spring Security", "JWT", "OAuth2", "BCrypt"],
-      icon: Shield
-    },
-    {
-      title: "Tools & Technologies",
-      skills: ["Git", "GitHub", "REST APIs", "Data Analysis", "Data Structures & Algorithms", "VS Code", "IntelliJ IDEA", "PyCharm", "Linux"],
+      title: "Technologies",
+      skills: ["MS Office", "GitHub", "Git"],
       icon: Settings
+    },
+    {
+      title: "Concepts",
+      skills: ["Object Oriented Programming", "Data Structures & Algorithms", "Functional Programming"],
+      icon: Code
     }
   ];
 
@@ -36,7 +31,7 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
               <div key={index} className="space-y-4">
                 <div className="flex items-center space-x-3 mb-4">
