@@ -10,7 +10,7 @@ const SkillsSection = () => {
     },
     {
       title: "Technologies",
-      skills: ["MS Office", "GitHub", "Git"],
+      skills: ["MS Office", "GitHub", "Git", "VS Code", "IntelliJ IDEA", "PyCharm", "Linux"],
       icon: Settings
     },
     {
@@ -35,8 +35,8 @@ const SkillsSection = () => {
             {skillCategories.map((category, index) => (
               <div key={index} className="space-y-4">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center">
-                    <category.icon className="w-4 h-4 text-primary" />
+                  <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
+                    <category.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="subheading-text text-primary">{category.title}</h3>
                 </div>
