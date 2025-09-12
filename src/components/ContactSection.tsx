@@ -45,8 +45,8 @@ const ContactSection = () => {
                 return <div key={index} className="p-4">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
-                          <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1">
-                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert" /> : <contact.icon className="w-6 h-6 text-primary" />}
+                          <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1 hover:bg-black dark:hover:bg-white smooth-transition group">
+                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0" /> : <contact.icon className="w-6 h-6 text-primary group-hover:text-white dark:group-hover:text-black" />}
                           </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
