@@ -43,10 +43,10 @@ const ContactSection = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
                 return <div key={index} className="p-4">
-                      <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
+                      <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block group">
                         <div className="flex items-start space-x-3">
-                          <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1 hover:bg-black dark:hover:bg-white smooth-transition group">
-                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0" /> : <contact.icon className="w-6 h-6 text-primary group-hover:text-white dark:group-hover:text-black" />}
+                          <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1 group-hover:bg-black dark:group-hover:bg-white transition-all duration-300 ease-in-out">
+                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0 transition-all duration-300 ease-in-out" /> : <contact.icon className="w-6 h-6 text-primary group-hover:text-white dark:group-hover:text-black transition-all duration-300 ease-in-out" />}
                           </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
