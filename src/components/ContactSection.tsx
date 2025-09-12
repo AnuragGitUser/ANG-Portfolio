@@ -42,11 +42,11 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
-                return <Card key={index} className="p-4 hover:shadow-lg smooth-transition">
+                return <div key={index} className="p-4">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
-                          <div className="mt-1">
-                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert" /> : <contact.icon className="w-6 h-6 text-primary" />}
+                          <div className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center mt-1">
+                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-4 h-4 brightness-0 dark:invert" /> : <contact.icon className="w-4 h-4 text-primary" />}
                           </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
@@ -54,7 +54,7 @@ const ContactSection = () => {
                           </div>
                         </div>
                       </a>
-                    </Card>;
+                    </div>;
               })}
               </div>
             </div>
