@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Globe } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -70,20 +70,18 @@ const ProjectsSection = () => {
                       ))}
                     </div>
 
-                    <div className="flex space-x-3">
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4" />
-                          Code
-                        </a>
-                      </Button>
-                      <Button variant="secondary" size="sm" asChild>
-                        <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
-                          Demo
-                        </a>
-                      </Button>
-                    </div>
+                     <div className="flex space-x-3">
+                       <Button variant="outline" size="sm" asChild>
+                         <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                           <Github className="w-4 h-4" />
+                         </a>
+                       </Button>
+                       <Button variant="secondary" size="sm" asChild>
+                         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                           <Globe className="w-4 h-4" />
+                         </a>
+                       </Button>
+                     </div>
                   </div>
                 </div>
               </Card>
