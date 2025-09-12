@@ -46,7 +46,7 @@ const ContactSection = () => {
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block">
                         <div className="flex items-start space-x-3">
                           <div className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center mt-1">
-                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-4 h-4 brightness-0 dark:invert" /> : <contact.icon className="w-4 h-4 text-primary" />}
+                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-5 h-5 brightness-0 dark:invert" /> : <contact.icon className="w-5 h-5 text-primary" />}
                           </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
