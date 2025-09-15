@@ -40,7 +40,7 @@ const AboutSection = () => {
     img.src = '/lovable-uploads/d82d6619-34f5-4494-9a5f-c42edf85f3ee.png';
   };
   const features = [{
-    title: "Full-Stack Development",
+    title: "Frontend Development",
     description: "Building end-to-end web applications with modern technologies and cloud integration.",
     icon: Code
   }, {
