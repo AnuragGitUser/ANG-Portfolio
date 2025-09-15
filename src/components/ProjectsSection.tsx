@@ -6,9 +6,9 @@ import { ExternalLink, Github, Globe } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Exploring the dimensions of Full Stack Web Development with modern responsive design and interactive features.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      title: "AI-Powered Quiz/Test Generator for Teachers",
+      description: "Developed an intelligent quiz and test generation system for educators using AI to create customized assessments based on curriculum topics and difficulty levels.",
+      technologies: ["AI", "Machine Learning", "Web Development", "JavaScript"],
       codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
     },
