@@ -65,7 +65,7 @@ const AboutSection = () => {
           {/* About Me */}
           <div className="space-y-8">
             <h2 className="heading-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-4xl">Computer Engineering student at A.G. Patil Institute of Technology, Solapur with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications and data analysis tools with a strong foundation in object-oriented programming and data structures.</p>
+            <p className="text-lg text-muted-foreground max-w-4xl">Computer Engineering student at A.G. Patil Institute of Technology, Solapur with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications and data analysis tools with a strong foundation in object-oriented programming and data structures. I explore concepts in entrepreneurship, AI and Software Engineering.</p>
             <Button variant="cta" size="cta" className="mt-6 rounded-2xl" onClick={handleDownloadResume}>
               <Download className="mr-2 h-4 w-4" />
               Resume
