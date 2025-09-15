@@ -13,8 +13,8 @@ const ProjectsSection = () => {
       demoUrl: "#"
     },
     {
-      title: "Cloud-Based Document Collaboration (DuoCollab)",
-      description: "Built DuoCollab, a web-app for collaboration of documents over cloud with real-time editing and sharing capabilities.",
+      title: "Cloud-Based Document Collaboration (DocCollab)",
+      description: "Built DocCollab, a web-app for collaboration of documents over cloud with real-time editing and sharing capabilities.",
       technologies: ["Cloud Computing", "Web Development", "JavaScript"],
       codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
