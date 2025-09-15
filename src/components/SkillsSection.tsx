@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Coffee, Settings, Shield, Code } from "lucide-react";
+import { Coffee, Settings, Code, GitBranch, Monitor } from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -10,8 +10,18 @@ const SkillsSection = () => {
     },
     {
       title: "Technologies",
-      skills: ["MS Office", "GitHub", "Git", "VS Code", "IntelliJ IDEA", "PyCharm", "Linux"],
+      skills: ["Linux", "MS Office"],
       icon: Settings
+    },
+    {
+      title: "Version Control",
+      skills: ["Git", "GitHub", "Vercel"],
+      icon: GitBranch
+    },
+    {
+      title: "IDEs",
+      skills: ["VS Code", "IntelliJ IDEA", "PyCharm"],
+      icon: Monitor
     },
     {
       title: "Concepts",
@@ -31,7 +41,7 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {skillCategories.map((category, index) => (
               <div key={index} className="space-y-4">
                 <div className="flex items-center space-x-3 mb-4">
