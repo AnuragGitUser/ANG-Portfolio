@@ -27,9 +27,9 @@ const ProjectsSection = () => {
       demoUrl: "#"
     },
     {
-      title: "AgriMarket - Cloud-based Market Analyzer",
-      description: "Built AgriMarket for agriculture support for farmers with price & weather prediction using AI and cloud technologies.",
-      technologies: ["AI", "Cloud Computing", "Data Analysis"],
+      title: "AI-Powered Quiz/Test Generator for Teachers",
+      description: "Built an intelligent assessment system that generates customized quizzes and tests for educators using AI to create questions based on curriculum topics.",
+      technologies: ["AI", "Machine Learning", "Web Development"],
       codeUrl: "https://github.com/AnuragGitUser",
       demoUrl: "#"
     },
