@@ -25,7 +25,7 @@ const SkillsSection = () => {
     },
     {
       title: "Concepts",
-      skills: ["Object Oriented Programming", "Data Structures & Algorithms", "Functional Programming"],
+      skills: ["OOP", "DSA", "Functional Programming"],
       icon: Code
     }
   ];
