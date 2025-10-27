@@ -15,7 +15,7 @@ const HeroSection = () => {
       clearInterval(techTimer);
     };
   }, []);
-  return <section id="hero" className="min-h-screen flex items-center justify-center pt-20">
+  return <section id="hero" className="min-h-screen flex items-center justify-center pt-20 grid-background overflow-hidden">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}

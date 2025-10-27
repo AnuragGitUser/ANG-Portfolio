@@ -157,4 +157,38 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Grid background pattern */
+  .grid-background {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    position: relative;
+  }
+
+  .grid-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(192, 192, 192, 0.15) 50%,
+      transparent 100%
+    );
+    animation: shine 3s ease-in-out infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
 }

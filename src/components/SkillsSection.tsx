@@ -31,7 +31,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding grid-background overflow-hidden relative">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
