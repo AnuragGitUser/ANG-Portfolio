@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const HeroSection = () => {
+  useScrollAnimation();
   const [projectCount, setProjectCount] = useState(0);
   const [techCount, setTechCount] = useState(0);
   useEffect(() => {
