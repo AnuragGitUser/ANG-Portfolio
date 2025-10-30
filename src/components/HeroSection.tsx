@@ -51,17 +51,20 @@ const HeroSection = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-80 h-80">
+            <div className="relative w-[400px] h-[400px]">
+              {/* Border ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30"></div>
+              
               {/* Rotating text ring */}
               <div className="absolute inset-0 animate-spin-slow">
-                <svg className="w-full h-full" viewBox="0 0 200 200">
+                <svg className="w-full h-full" viewBox="0 0 400 400">
                   <defs>
                     <path
                       id="circlePath"
-                      d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
+                      d="M 200, 200 m -195, 0 a 195,195 0 1,1 390,0 a 195,195 0 1,1 -390,0"
                     />
                   </defs>
-                  <text className="fill-primary text-[10px] font-semibold tracking-[0.3em] uppercase">
+                  <text className="fill-primary text-[14px] font-bold tracking-[0.4em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
                       FRONTEND DEVELOPER • SOFTWARE ENGINEER • AI ENTHUSIAST •
                     </textPath>
@@ -70,9 +73,9 @@ const HeroSection = () => {
               </div>
               
               {/* Profile photo */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 rounded-full overflow-hidden shadow-2xl">
-                  <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Backend Developer" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 flex items-center justify-center p-8">
+                <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
+                  <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
