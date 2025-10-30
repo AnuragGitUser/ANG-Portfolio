@@ -60,10 +60,10 @@ const HeroSection = () => {
                   <defs>
                     <path
                       id="circlePath"
-                      d="M 200, 200 m -190, 0 a 190,190 0 1,1 380,0 a 190,190 0 1,1 -380,0"
+                      d="M 200, 200 m -182, 0 a 182,182 0 1,1 364,0 a 182,182 0 1,1 -364,0"
                     />
                   </defs>
-                  <text className="fill-primary text-[16px] font-bold tracking-[0.25em] uppercase">
+                  <text className="fill-primary text-[15px] font-semibold tracking-[0.3em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
                       FRONTEND DEVELOPER • SOFTWARE ENGINEER • AI ENTHUSIAST •
                     </textPath>
