@@ -51,13 +51,30 @@ const HeroSection = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl">
-                <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Backend Developer" className="w-full h-full object-cover" />
+            <div className="relative w-80 h-80">
+              {/* Rotating text ring */}
+              <div className="absolute inset-0 animate-spin-slow">
+                <svg className="w-full h-full" viewBox="0 0 200 200">
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
+                    />
+                  </defs>
+                  <text className="fill-primary text-[10px] font-semibold tracking-[0.3em] uppercase">
+                    <textPath href="#circlePath" startOffset="0%">
+                      FRONTEND DEVELOPER • SOFTWARE ENGINEER • AI ENTHUSIAST •
+                    </textPath>
+                  </text>
+                </svg>
               </div>
-              {/* Decorative elements */}
               
-              
+              {/* Profile photo */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-64 h-64 rounded-full overflow-hidden shadow-2xl">
+                  <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Backend Developer" className="w-full h-full object-cover" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
