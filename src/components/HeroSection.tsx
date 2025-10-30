@@ -55,15 +55,15 @@ const HeroSection = () => {
               {/* Border ring */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/30"></div>
               
-              <div className="absolute inset-0 p-6 animate-spin-slow pointer-events-none select-none">
+              <div className="absolute inset-0 animate-spin-slow pointer-events-none select-none">
                 <svg className="w-full h-full" viewBox="0 0 400 400">
                   <defs>
                     <path
                       id="circlePath"
-                      d="M 200, 200 m -175, 0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0"
+                      d="M 200, 200 m -190, 0 a 190,190 0 1,1 380,0 a 190,190 0 1,1 -380,0"
                     />
                   </defs>
-                  <text className="fill-primary text-[13px] font-semibold tracking-[0.3em] uppercase">
+                  <text className="fill-primary text-[16px] font-bold tracking-[0.25em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
                       FRONTEND DEVELOPER • SOFTWARE ENGINEER • AI ENTHUSIAST •
                     </textPath>
