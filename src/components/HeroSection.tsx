@@ -65,14 +65,14 @@ const HeroSection = () => {
                   </defs>
                   <text className="fill-primary text-[18px] font-bold tracking-[0.35em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
-                      FRONTEND DEVELOPER • SOFTWARE ENGINEER • AI ENTHUSIAST •
+                      FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST •
                     </textPath>
                   </text>
                 </svg>
               </div>
               
               {/* Profile photo */}
-              <div className="absolute inset-0 flex items-center justify-center p-8">
+              <div className="absolute inset-0 flex items-center justify-center p-16">
                 <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
                   <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" />
                 </div>
