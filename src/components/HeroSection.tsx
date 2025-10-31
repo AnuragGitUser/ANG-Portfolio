@@ -51,19 +51,19 @@ const HeroSection = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-[450px] h-[450px]">
+            <div className="relative w-[400px] h-[400px]">
               {/* Border ring */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/30"></div>
               
               <div className="absolute inset-0 animate-spin-slow pointer-events-none select-none">
-                <svg className="w-full h-full" viewBox="0 0 450 450">
+                <svg className="w-full h-full" viewBox="0 0 400 400">
                   <defs>
                     <path
                       id="circlePath"
-                      d="M 225, 225 m -210, 0 a 210,210 0 1,1 420,0 a 210,210 0 1,1 -420,0"
+                      d="M 200, 200 m -182, 0 a 182,182 0 1,1 364,0 a 182,182 0 1,1 -364,0"
                     />
                   </defs>
-                  <text className="fill-primary text-[18px] font-bold tracking-[0.35em] uppercase">
+                  <text className="fill-primary text-[15px] font-semibold tracking-[0.3em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
                       FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST •
                     </textPath>
@@ -72,7 +72,7 @@ const HeroSection = () => {
               </div>
               
               {/* Profile photo */}
-              <div className="absolute inset-0 flex items-center justify-center p-16">
+              <div className="absolute inset-0 flex items-center justify-center p-8">
                 <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
                   <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" />
                 </div>
