@@ -61,11 +61,10 @@ const HeroSection = () => {
                     <path
                       id="circlePath"
                       d="M 225, 225 m -191, 0 a 191,191 0 1,1 382,0 a 191,191 0 1,1 -382,0"
-                      pathLength="1000"
                     />
                   </defs>
-                  <text className="fill-primary text-[15px] font-semibold tracking-[0.32em] uppercase" lengthAdjust="spacingAndGlyphs" textLength="1000">
-                    <textPath href="#circlePath" startOffset="0%">FRONTEND DEVELOPER  •  SOFTWARE ENGINEER  •  ARTIFICIAL INTELLIGENCE ENTHUSIAST</textPath>
+                  <text className="fill-primary text-[15px] font-semibold tracking-[0.32em] uppercase">
+                    <textPath href="#circlePath" startOffset="0%">FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST • FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST • FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST</textPath>
                   </text>
                 </svg>
               </div>
