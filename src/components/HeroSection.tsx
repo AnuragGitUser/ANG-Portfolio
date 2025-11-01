@@ -65,7 +65,7 @@ const HeroSection = () => {
                   </defs>
                   <text className="fill-primary text-[15px] font-semibold tracking-[0.32em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">
-                      FRONTEND DEVELOPER  •  SOFTWARE ENGINEER  •  ARTIFICIAL INTELLIGENCE ENTHUSIAST  •
+                      FRONTEND DEVELOPER  •  SOFTWARE ENGINEER  •  ARTIFICIAL INTELLIGENCE ENTHUSIAST
                     </textPath>
                   </text>
                 </svg>
