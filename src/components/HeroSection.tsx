@@ -53,9 +53,9 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-[450px] h-[450px]">
               {/* Border ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-primary/30"></div>
+              <div className="hidden md:block absolute inset-0 rounded-full border-2 border-primary/30"></div>
               
-              <div className="absolute inset-0 animate-spin-slow pointer-events-none select-none">
+              <div className="hidden md:block absolute inset-0 animate-spin-slow pointer-events-none select-none">
                 <svg className="w-full h-full" viewBox="0 0 450 450">
                   <defs>
                     <path
