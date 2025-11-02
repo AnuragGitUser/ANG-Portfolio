@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-[450px] h-[450px]">
+            <div className="relative w-[280px] h-[280px] md:w-[450px] md:h-[450px]">
               {/* Border ring */}
               <div className="hidden md:block absolute inset-0 rounded-full border-2 border-primary/30"></div>
               
