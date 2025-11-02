@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-[280px] h-[280px] md:w-[450px] md:h-[450px]">
+            <div className="relative w-[250px] h-[250px] md:w-[450px] md:h-[450px]">
               {/* Border ring */}
               <div className="hidden md:block absolute inset-0 rounded-full border-2 border-primary/30"></div>
               
@@ -70,7 +70,7 @@ const HeroSection = () => {
               </div>
               
               {/* Profile photo */}
-              <div className="absolute inset-0 flex items-center justify-center p-14">
+              <div className="absolute inset-0 flex items-center justify-center p-4 md:p-14">
                 <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
                   <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" />
                 </div>
