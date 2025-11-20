@@ -59,7 +59,7 @@ const AboutSection = () => {
     period: "Aug 2020 - Mar 2022",
     cgpa: "68.33%"
   }];
-  return <section id="about" className="section-padding bg-secondary/30">
+  return <section id="about" className="section-padding grid-background overflow-hidden relative pb-8">
       <div className="section-container">
         <div className="space-y-16">
           {/* About Me */}
