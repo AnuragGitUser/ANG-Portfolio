@@ -91,7 +91,37 @@ export default {
     			'accordion-up': 'accordion-up 0.2s ease-out',
     			'spin-slow': 'spin 20s linear infinite'
     		},
-    		fontFamily: {}
+    		fontFamily: {
+    			sans: [
+    				'Inter',
+    				'ui-sans-serif',
+    				'system-ui',
+    				'sans-serif',
+    				'Apple Color Emoji',
+    				'Segoe UI Emoji',
+    				'Segoe UI Symbol',
+    				'Noto Color Emoji'
+    			],
+    			serif: [
+    				'ui-serif',
+    				'Georgia',
+    				'Cambria',
+    				'Times New Roman',
+    				'Times',
+    				'serif'
+    			],
+    			mono: [
+    				'Cascadia Code',
+    				'ui-monospace',
+    				'SFMono-Regular',
+    				'Menlo',
+    				'Monaco',
+    				'Consolas',
+    				'Liberation Mono',
+    				'Courier New',
+    				'monospace'
+    			]
+    		}
     	}
     },
 	plugins: [require("tailwindcss-animate")],
