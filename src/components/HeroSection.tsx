@@ -41,6 +41,7 @@ const HeroSection = () => {
               <div className="text-left">
                 <div className="text-4xl font-bold text-primary">+{projectCount}</div>
                 <p className="text-sm text-muted-foreground">Projects Completed</p>
+                <p className="text-sm text-muted-foreground mt-1">Certifications</p>
               </div>
               <div className="text-left">
                 <div className="text-4xl font-bold text-primary">+{techCount}</div>
