@@ -7,32 +7,28 @@ const AboutSection = () => {
     const pdf = new jsPDF();
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.onload = function() {
+    img.onload = function () {
       const canvas = document.createElement('canvas');
       const ctx = canvas.getContext('2d');
       canvas.width = img.width;
       canvas.height = img.height;
       ctx?.drawImage(img, 0, 0);
-      
       const imgData = canvas.toDataURL('image/jpeg', 1.0);
-      
+
       // Calculate dimensions to fit the page
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
       const imgAspectRatio = img.width / img.height;
       const pdfAspectRatio = pdfWidth / pdfHeight;
-      
       let finalWidth = pdfWidth;
       let finalHeight = pdfHeight;
-      
       if (imgAspectRatio > pdfAspectRatio) {
         finalHeight = pdfWidth / imgAspectRatio;
       } else {
         finalWidth = pdfHeight * imgAspectRatio;
       }
-      
       pdf.addImage(imgData, 'JPEG', 0, 0, finalWidth, finalHeight);
-      
+
       // Open in new tab
       const pdfOutput = pdf.output('bloburl');
       window.open(pdfOutput, '_blank');
@@ -60,7 +56,7 @@ const AboutSection = () => {
     cgpa: "68.33%"
   }];
   return <section id="about" className="section-padding grid-background overflow-hidden relative py-20 lg:py-28">
-      <div className="section-container">
+      <div className="section-container mx-[35px]">
         <div className="space-y-12 lg:space-y-20">
           {/* About Me */}
           <div className="space-y-6">
