@@ -9,39 +9,31 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
-
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
-
 const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const App = () => <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
         <Routes>
-          <Route path="/" element={
-            <div className="min-h-screen">
+          <Route path="/" element={<div className="min-h-screen">
               <Header />
               <main>
                 <HeroSection />
-                <AboutSection />
+                <AboutSection className="mx-[20px]" />
                 <SkillsSection />
                 <ProjectsSection />
                 <ContactSection />
               </main>
-            </div>
-          } />
+            </div>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
     </ThemeProvider>
-  </QueryClientProvider>
-);
-
+  </QueryClientProvider>;
 export default App;
