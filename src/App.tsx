@@ -23,7 +23,7 @@ const App = () => <QueryClientProvider client={queryClient}>
               <Header />
               <main>
                 <HeroSection />
-                <AboutSection className="mx-[40px]" />
+                <AboutSection />
                 <SkillsSection />
                 <ProjectsSection />
                 <ContactSection />
