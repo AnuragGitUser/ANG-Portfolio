@@ -112,6 +112,18 @@
     line-height: 1.6;
   }
 
+  /* Hide default cursor globally for custom cursor */
+  body,
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  .cursor-target,
+  .cursor-target * {
+    cursor: none !important;
+  }
+
   /* Typography classes */
   .hero-text {
     font-size: var(--font-size-hero);
