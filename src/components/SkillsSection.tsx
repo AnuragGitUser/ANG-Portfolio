@@ -55,7 +55,7 @@ const SkillsSection = () => {
                     <Badge 
                       key={skillIndex} 
                       variant="secondary" 
-                      className="text-sm px-3 py-1 hover:bg-primary hover:text-primary-foreground smooth-transition cursor-default"
+                      className="cursor-target text-sm px-3 py-1 hover:bg-primary hover:text-primary-foreground smooth-transition cursor-default"
                     >
                       {skill}
                     </Badge>

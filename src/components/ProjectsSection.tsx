@@ -52,7 +52,7 @@ const ProjectsSection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="p-6 hover:shadow-xl smooth-transition hover:scale-105">
+              <Card key={index} className="cursor-target p-6 hover:shadow-xl smooth-transition hover:scale-105">
                 <div className="space-y-6">
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-balance">{project.title}</h3>
@@ -71,12 +71,12 @@ const ProjectsSection = () => {
                     </div>
 
                      <div className="flex space-x-3">
-                       <Button variant="outline" size="sm" asChild>
+                       <Button variant="outline" size="sm" asChild className="cursor-target">
                          <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                            <Github className="w-4 h-4" />
                          </a>
                        </Button>
-                       <Button variant="secondary" size="sm" asChild>
+                       <Button variant="secondary" size="sm" asChild className="cursor-target">
                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                            <Globe className="w-4 h-4" />
                          </a>
@@ -89,7 +89,7 @@ const ProjectsSection = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="outline" className="bg-black text-white border-black hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200 dark:hover:text-black" asChild>
+            <Button variant="outline" className="cursor-target bg-black text-white border-black hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200 dark:hover:text-black" asChild>
               <a href="https://github.com/AnuragGitUser" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-1" />
                 View All Projects
