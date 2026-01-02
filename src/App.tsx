@@ -11,6 +11,7 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
+import TargetCursor from "./components/TargetCursor";
 const queryClient = new QueryClient();
 const App = () => <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
@@ -20,6 +21,7 @@ const App = () => <QueryClientProvider client={queryClient}>
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<div className="min-h-screen">
+              <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
               <Header />
               <main>
                 <HeroSection />

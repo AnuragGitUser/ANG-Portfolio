@@ -66,7 +66,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h2 className="heading-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">Computer Engineering student at A.G. Patil Institute of Technology, Solapur with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications and data analysis tools with a strong foundation in object-oriented programming and data structures. I explore concepts in entrepreneurship, AI and Software Engineering.</p>
-            <Button variant="cta" size="cta" className="mt-4 rounded-2xl" onClick={handleDownloadResume}>
+            <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl" onClick={handleDownloadResume}>
               <Download className="mr-2 h-4 w-4" />
               Resume
             </Button>
@@ -74,7 +74,7 @@ const AboutSection = () => {
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {features.map((feature, index) => <Card key={index} className="p-5 lg:p-6 hover:shadow-lg smooth-transition">
+            {features.map((feature, index) => <Card key={index} className="cursor-target p-5 lg:p-6 hover:shadow-lg smooth-transition">
                 <div className="flex items-start gap-4">
                   <div className="w-11 h-11 lg:w-12 lg:h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />

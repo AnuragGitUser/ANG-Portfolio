@@ -36,7 +36,7 @@ const Header = () => {
               <button
                 key={index}
                 onClick={() => scrollToSection(item.href)}
-                className="p-2 rounded-lg hover:bg-accent hover:text-accent-foreground smooth-transition"
+                className="cursor-target p-2 rounded-lg hover:bg-accent hover:text-accent-foreground smooth-transition"
                 title={item.label}
               >
                 <Icon size={20} />
@@ -49,7 +49,7 @@ const Header = () => {
             variant="ghost"
             size="icon"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="ml-2"
+            className="cursor-target ml-2"
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

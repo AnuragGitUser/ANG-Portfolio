@@ -42,7 +42,7 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-4">
                 {contactInfo.map((contact, index) => {
-                return <div key={index} className="p-4">
+                return <div key={index} className="cursor-target p-4">
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block group">
                         <div className="flex items-start space-x-3">
                           <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1 group-hover:bg-black dark:group-hover:bg-white transition-all duration-300 ease-in-out">
