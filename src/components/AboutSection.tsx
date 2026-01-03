@@ -3,9 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Download, Code, Cloud } from "lucide-react";
 
 const AboutSection = () => {
-  const handleOpenResume = () => {
-    window.open('/Resume_Anurag_Gurubhetti.pdf', '_blank');
-  };
   const features = [{
     title: "Frontend Development",
     description: "Building end-to-end web applications with modern technologies and cloud integration.",
@@ -33,10 +30,16 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h2 className="heading-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">Computer Engineering undergrad with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications & data analysis tools with a strong foundation in OOP and DSA. I explore concepts in entrepreneurship, AI & Software Engineering.</p>
-            <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl" onClick={handleOpenResume}>
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <a 
+              href="/Resume_Anurag_Gurubhetti.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl">
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </a>
           </div>
 
           {/* Features */}
