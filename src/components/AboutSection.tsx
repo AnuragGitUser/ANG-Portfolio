@@ -7,32 +7,28 @@ const AboutSection = () => {
     const pdf = new jsPDF();
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.onload = function() {
+    img.onload = function () {
       const canvas = document.createElement('canvas');
       const ctx = canvas.getContext('2d');
       canvas.width = img.width;
       canvas.height = img.height;
       ctx?.drawImage(img, 0, 0);
-      
       const imgData = canvas.toDataURL('image/jpeg', 1.0);
-      
+
       // Calculate dimensions to fit the page
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
       const imgAspectRatio = img.width / img.height;
       const pdfAspectRatio = pdfWidth / pdfHeight;
-      
       let finalWidth = pdfWidth;
       let finalHeight = pdfHeight;
-      
       if (imgAspectRatio > pdfAspectRatio) {
         finalHeight = pdfWidth / imgAspectRatio;
       } else {
         finalWidth = pdfHeight * imgAspectRatio;
       }
-      
       pdf.addImage(imgData, 'JPEG', 0, 0, finalWidth, finalHeight);
-      
+
       // Open in new tab
       const pdfOutput = pdf.output('bloburl');
       window.open(pdfOutput, '_blank');
@@ -65,7 +61,7 @@ const AboutSection = () => {
           {/* About Me */}
           <div className="space-y-6">
             <h2 className="heading-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">Computer Engineering student at A.G. Patil Institute of Technology, Solapur with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications and data analysis tools with a strong foundation in object-oriented programming and data structures. I explore concepts in entrepreneurship, AI and Software Engineering.</p>
+            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">Computer Engineering undergrad with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications & data analysis tools with a strong foundation in object-oriented programming and data structures. I explore concepts in entrepreneurship, AI & Software Engineering.</p>
             <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl" onClick={handleDownloadResume}>
               <Download className="mr-2 h-4 w-4" />
               Resume
