@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-
 const HeroSection = () => {
   useScrollAnimation();
   const [projectCount, setProjectCount] = useState(0);
@@ -32,7 +31,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-balance">Software Engineer | Frontend Developer</h2>
               <p className="text-muted-foreground max-w-lg">
-                Crafting robust Python APIs with Java & Spring Boot, focused on security and scalability.
+                Crafting robust Python apps with Java & C/C++, focused on security and scalability.
               </p>
             </div>
 
@@ -58,10 +57,7 @@ const HeroSection = () => {
               <div className="hidden md:block absolute inset-0 animate-spin-slow pointer-events-none select-none">
                 <svg className="w-full h-full" viewBox="0 0 450 450">
                   <defs>
-                    <path
-                      id="circlePath"
-                      d="M 225, 225 m -191, 0 a 191,191 0 1,1 382,0 a 191,191 0 1,1 -382,0"
-                    />
+                    <path id="circlePath" d="M 225, 225 m -191, 0 a 191,191 0 1,1 382,0 a 191,191 0 1,1 -382,0" />
                   </defs>
                   <text className="fill-primary text-[15px] font-semibold tracking-[0.50em] uppercase">
                     <textPath href="#circlePath" startOffset="0%">FRONTEND DEVELOPER • SOFTWARE ENGINEER • ARTIFICIAL INTELLIGENCE ENTHUSIAST •</textPath>
