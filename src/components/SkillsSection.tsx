@@ -22,7 +22,7 @@ const SkillsSection = () => {
     skills: ["OOP", "DSA", "Functional Programming"],
     icon: Code
   }];
-  return <section id="skills" className="pt-8 pb-24 grid-background overflow-hidden relative">
+  return <section id="skills" className="pt-8 pb-24 overflow-hidden relative">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">

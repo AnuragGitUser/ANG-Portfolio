@@ -23,7 +23,7 @@ const AboutSection = () => {
     period: "Aug 2020 - Mar 2022",
     cgpa: "68.33%"
   }];
-  return <section id="about" className="py-20 lg:py-28 grid-background overflow-hidden relative">
+  return <section id="about" className="py-20 lg:py-28 overflow-hidden relative">
       <div className="section-container px-6 md:px-12 lg:px-16">
         <div className="space-y-12">
           {/* About Me */}

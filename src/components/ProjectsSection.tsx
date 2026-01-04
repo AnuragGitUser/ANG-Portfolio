@@ -43,7 +43,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="portfolio" className="section-padding grid-background overflow-hidden relative">
+    <section id="portfolio" className="section-padding overflow-hidden relative">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
