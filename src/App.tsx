@@ -20,7 +20,7 @@ const App = () => <QueryClientProvider client={queryClient}>
         <Sonner />
         <BrowserRouter>
         <Routes>
-          <Route path="/" element={<div className="min-h-screen">
+          <Route path="/" element={<div className="min-h-screen grid-background">
               <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
               <Header />
               <main>
