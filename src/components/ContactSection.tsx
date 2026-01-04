@@ -26,7 +26,7 @@ const ContactSection = () => {
     value: "x.com/AnuragNG974",
     href: "https://x.com/AnuragNG974"
   }];
-  return <section id="contact" className="section-padding bg-secondary/30">
+  return <section id="contact" className="section-padding bg-background relative z-10">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
