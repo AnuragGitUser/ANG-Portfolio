@@ -16,7 +16,7 @@ const ProjectsSection = () => {
     codeUrl: "https://github.com/AnuragGitUser",
     demoUrl: "#"
   }, {
-    title: "Glass-Morphism Calculator",
+    title: "Glassmorphism Scientific Calculator",
     description: "Experimenting with various JavaScript effects combined with HTML and CSS to create a modern glass-morphism calculator interface.",
     technologies: ["HTML", "CSS", "JavaScript"],
     codeUrl: "https://github.com/AnuragGitUser",
