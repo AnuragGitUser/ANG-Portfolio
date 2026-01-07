@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                 <div className="space-y-6">
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-balance">{project.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                    <p className="text-muted-foreground text-sm leading-relaxed text-left">
                       {project.description}
                     </p>
                   </div>
