@@ -68,7 +68,7 @@ const HeroSection = () => {
               {/* Profile photo */}
               <div className="absolute inset-0 flex items-center justify-center p-4 md:p-14">
                 <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
-                  <img src="/lovable-uploads/43db5a98-2bdf-4b70-8fbb-ffac93ceb6e5.png" alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" />
+                  <img alt="Anurag Gurubhetti - Frontend Developer" className="w-full h-full object-cover" src="/lovable-uploads/0468fb97-c051-4388-912c-95d5bc5530e0.png" />
                 </div>
               </div>
             </div>
