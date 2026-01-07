@@ -20,7 +20,7 @@ const ProjectsSection = () => {
     description: "Experimenting with various JavaScript effects combined with HTML and CSS to create a modern glass-morphism calculator interface.",
     technologies: ["HTML", "CSS", "JavaScript"],
     codeUrl: "https://github.com/AnuragGitUser",
-    demoUrl: "#"
+    demoUrl: "https://anuraggituser.github.io/Glassmorphism-Scientific-Calculator/"
   }, {
     title: "AI-Powered Quiz/Test Generator for Teachers",
     description: "Built an intelligent assessment system that generates customized quizzes and tests for educators using AI to create questions based on curriculum topics.",
