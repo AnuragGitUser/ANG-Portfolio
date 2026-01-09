@@ -213,3 +213,20 @@
       linear-gradient(90deg, rgba(255, 255, 255, 0.23) 1px, transparent 1px);
   }
 }
+
+/* Ripple Effect Animation */
+@keyframes ripple-fill {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(14, 165, 233, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.animate-ripple-fill {
+  animation: ripple-fill var(--duration, 400ms) ease-out var(--delay, 0ms) forwards;
+}
