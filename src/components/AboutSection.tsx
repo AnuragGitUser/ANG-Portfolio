@@ -28,7 +28,7 @@ const AboutSection = () => {
           {/* About Me */}
           <div className="space-y-6">
             <h2 className="heading-text">About Me</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed text-justify">Computer Engineering undergrad with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. Experienced in building collaborative web applications & data analysis tools with a strong foundation in OOP and DSA. I explore concepts in entrepreneurship, AI & Software Engineering.</p>
+            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed text-justify">Computer Engineering undergrad with expertise in Java, Python, and C/C++. Passionate about full-stack web development, AI technologies, and cloud computing. I craft exceptional digital experiences that are fast, accessible, visually appealing & responsive. Experienced in building collaborative web applications & data analysis tools with a strong foundation in OOP and DSA. I explore concepts in entrepreneurship, AI & Software Engineering.</p>
             <a href="/resume.html" target="_blank" rel="noopener noreferrer">
               <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl">
                 <Download className="mr-2 h-4 w-4" />
