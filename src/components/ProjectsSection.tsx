@@ -23,7 +23,7 @@ const ProjectsSection = () => {
     demoUrl: "https://anuraggituser.github.io/Glassmorphism-Scientific-Calculator/"
   }, {
     title: "AI-Powered Quiz/Test Generator",
-    description: "Built an intelligent assessment system that generates customized quizzes and tests for educators using AI to create questions based on curriculum topics.",
+    description: "Built an intelligent assessment system that generates customized quizzes and tests using AI to create questions based on curriculum topics.",
     technologies: ["AI", "Machine Learning", "Web Development"],
     codeUrl: "https://github.com/AnuragGitUser",
     demoUrl: "#"
