@@ -64,11 +64,13 @@ const ProjectsSection = () => {
                            <Github className="w-4 h-4" />
                          </a>
                        </Button>
-                       <Button variant="secondary" size="sm" asChild className="cursor-target">
-                         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                           <Globe className="w-4 h-4" />
-                         </a>
-                       </Button>
+                       {project.title !== "Basic Text Editor" && (
+                         <Button variant="secondary" size="sm" asChild className="cursor-target">
+                           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                             <Globe className="w-4 h-4" />
+                           </a>
+                         </Button>
+                       )}
                      </div>
                   </div>
                 </div>
