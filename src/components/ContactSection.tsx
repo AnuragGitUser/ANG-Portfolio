@@ -2,8 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Github } from "lucide-react";
 import xLogo from "@/assets/x-logo.svg";
+import linkedinLogo from "@/assets/linkedin-logo.svg";
 const ContactSection = () => {
   const contactInfo = [{
     icon: Mail,
@@ -11,7 +12,7 @@ const ContactSection = () => {
     value: "anuraggurubhetti@gmail.com",
     href: "mailto:anuraggurubhetti@gmail.com"
   }, {
-    icon: Linkedin,
+    icon: "linkedinLogo",
     label: "LinkedIn",
     value: "linkedin.com/in/anuraggurubhetti",
     href: "https://linkedin.com/in/anuraggurubhetti"
@@ -46,7 +47,13 @@ const ContactSection = () => {
                       <a href={contact.href} target="_blank" rel="noopener noreferrer" className="block group">
                         <div className="flex items-start space-x-3">
                           <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center mt-1 group-hover:bg-black dark:group-hover:bg-white transition-all duration-300 ease-in-out">
-                            {contact.icon === "xLogo" ? <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0 transition-all duration-300 ease-in-out" /> : <contact.icon className="w-6 h-6 text-primary group-hover:text-white dark:group-hover:text-black transition-all duration-300 ease-in-out" />}
+                            {contact.icon === "xLogo" ? (
+                              <img src={xLogo} alt="X Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0 transition-all duration-300 ease-in-out" />
+                            ) : contact.icon === "linkedinLogo" ? (
+                              <img src={linkedinLogo} alt="LinkedIn Logo" className="w-6 h-6 brightness-0 dark:invert group-hover:brightness-0 dark:group-hover:brightness-0 group-hover:invert dark:group-hover:invert-0 transition-all duration-300 ease-in-out" />
+                            ) : (
+                              <contact.icon className="w-6 h-6 text-primary group-hover:text-white dark:group-hover:text-black transition-all duration-300 ease-in-out" />
+                            )}
                           </div>
                           <div className="space-y-1">
                             <p className="font-medium">{contact.label}</p>
