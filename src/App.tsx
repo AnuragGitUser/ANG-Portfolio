@@ -12,6 +12,7 @@ import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import TargetCursor from "./components/TargetCursor";
+import NavigationDock from "./components/NavigationDock";
 const queryClient = new QueryClient();
 const App = () => <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
@@ -30,6 +31,7 @@ const App = () => <QueryClientProvider client={queryClient}>
                 <ProjectsSection />
                 <ContactSection />
               </main>
+              <NavigationDock />
             </div>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
