@@ -40,8 +40,9 @@ const NavigationDock = () => {
       <Dock magnification={60} distance={100} direction="bottom">
         {navItems.map((item, index) => {
           const Icon = item.icon;
+          const isAbout = item.label === "About";
           return (
-            <DockIcon key={index}>
+            <DockIcon key={index} className={isAbout ? "hidden sm:flex" : ""}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <button
