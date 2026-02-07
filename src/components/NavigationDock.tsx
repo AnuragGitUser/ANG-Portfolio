@@ -60,7 +60,7 @@ const NavigationDock = () => {
           );
         })}
         
-        <Separator orientation="vertical" className="h-full" />
+        <Separator orientation="vertical" className="h-full mx-1" />
         
         {/* Contact & Social Icons */}
         <DockIcon>
@@ -103,7 +103,7 @@ const NavigationDock = () => {
           </DockIcon>
         ))}
         
-        <Separator orientation="vertical" className="h-full" />
+        <Separator orientation="vertical" className="h-full mx-1" />
         
         {/* Theme Toggle */}
         <DockIcon>
