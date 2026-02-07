@@ -1,7 +1,6 @@
 import { Home, User, Wrench, Briefcase, Mail, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
@@ -9,6 +8,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/ui/dock";
+import linkedinLogo from "@/assets/linkedin-logo.svg";
+import xLogo from "@/assets/x-logo.svg";
+import githubLogo from "@/assets/github-logo.svg";
 
 const NavigationDock = () => {
   const { theme, setTheme } = useTheme();
@@ -18,7 +20,12 @@ const NavigationDock = () => {
     { icon: User, href: "#about", label: "About" },
     { icon: Wrench, href: "#skills", label: "Skills" },
     { icon: Briefcase, href: "#portfolio", label: "Portfolio" },
-    { icon: Mail, href: "#contact", label: "Contact" },
+  ];
+
+  const socialItems = [
+    { icon: linkedinLogo, href: "https://linkedin.com/in/anuraggurubhetti", label: "LinkedIn" },
+    { icon: githubLogo, href: "https://github.com/AnuragGitUser/", label: "GitHub" },
+    { icon: xLogo, href: "https://x.com/AnuragNG974", label: "X" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -39,10 +46,7 @@ const NavigationDock = () => {
                 <TooltipTrigger asChild>
                   <button
                     onClick={() => scrollToSection(item.href)}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-full rounded-full cursor-target"
-                    )}
+                    className="size-full rounded-full cursor-target flex items-center justify-center"
                   >
                     <Icon className="size-4" />
                   </button>
@@ -57,16 +61,56 @@ const NavigationDock = () => {
         
         <Separator orientation="vertical" className="h-full" />
         
+        {/* Contact & Social Icons */}
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button
+                onClick={() => scrollToSection("#contact")}
+                className="size-full rounded-full cursor-target flex items-center justify-center"
+              >
+                <Mail className="size-4" />
+              </button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Contact</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        
+        {socialItems.map((item, index) => (
+          <DockIcon key={`social-${index}`}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-full rounded-full cursor-target flex items-center justify-center"
+                >
+                  <img 
+                    src={item.icon} 
+                    alt={item.label} 
+                    className="size-4 brightness-0 dark:invert"
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{item.label}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+        ))}
+        
+        <Separator orientation="vertical" className="h-full" />
+        
         {/* Theme Toggle */}
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "icon" }),
-                  "size-full rounded-full cursor-target"
-                )}
+                className="size-full rounded-full cursor-target flex items-center justify-center"
               >
                 <Sun className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute size-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
