@@ -18,9 +18,9 @@ export default {
 			}
 		},
 		extend: {
-		fontFamily: {
-			sans: ['Google Sans Text', 'sans-serif'],
-		},
+			fontFamily: {
+				sans: ['Space Grotesk', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
