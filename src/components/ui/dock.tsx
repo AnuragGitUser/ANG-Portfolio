@@ -108,12 +108,14 @@ const DockIcon = ({
       ref={ref}
       style={{ width }}
       className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-lg hover:bg-accent transition-colors",
+        "flex aspect-square cursor-pointer items-center justify-center",
         className
       )}
       {...props}
     >
-      {children}
+      <div className="flex items-center justify-center w-[70%] h-[70%] rounded-md hover:bg-accent transition-colors">
+        {children}
+      </div>
     </motion.div>
   );
 };
