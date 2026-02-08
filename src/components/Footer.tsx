@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-3">
           <div className="text-2xl font-bold text-primary">ANG</div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground text-center sm:text-left">
             © 2026 Anurag Gurubhetti. Built with passion and precision.
           </p>
         </div>
