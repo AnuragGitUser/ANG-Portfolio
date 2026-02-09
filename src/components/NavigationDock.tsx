@@ -36,7 +36,7 @@ const NavigationDock = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:px-5">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:px-8">
       <Dock magnification={60} distance={100} direction="bottom">
         {navItems.map((item, index) => {
           const Icon = item.icon;
