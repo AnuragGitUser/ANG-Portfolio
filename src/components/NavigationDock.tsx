@@ -36,8 +36,8 @@ const NavigationDock = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:px-12">
-      <Dock magnification={60} distance={100} direction="bottom">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:max-w-[calc(100vw-2rem)] max-sm:overflow-hidden">
+      <Dock magnification={60} distance={100} direction="bottom" className="max-sm:!max-w-full">
         {navItems.map((item, index) => {
           const Icon = item.icon;
           const isAbout = item.label === "About";
