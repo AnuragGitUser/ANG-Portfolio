@@ -66,14 +66,12 @@ const NavigationDock = () => {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <a
-                href="mailto:anuraggurubhetti@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => scrollToSection("#contact")}
                 className="size-full rounded-full cursor-target flex items-center justify-center"
               >
                 <Mail className="size-4" />
-              </a>
+              </button>
             </TooltipTrigger>
             <TooltipContent>
               <p>Contact</p>
