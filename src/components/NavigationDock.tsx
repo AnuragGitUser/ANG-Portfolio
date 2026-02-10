@@ -67,7 +67,9 @@ const NavigationDock = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <a
-                href="mailto:anuraggurubhetti@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&to=anuraggurubhetti@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="size-full rounded-full cursor-target flex items-center justify-center"
               >
                 <Mail className="size-4" />
