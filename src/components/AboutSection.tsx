@@ -30,7 +30,7 @@ const AboutSection = () => {
             <h2 className="heading-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed text-left">Computer Engineering undergrad with expertise in Java, Python & C/C++. Passionate about full-stack web development, AI technologies & cloud computing. I craft exceptional digital experiences that are fast, accessible, visually appealing & responsive. Experienced in building collaborative web applications & data analysis tools with a strong foundation in OOP & DSA. I explore concepts in entrepreneurship, AI & Software Engineering. I build scalable, open-source systems empowering communities and solving real-world problems, impact-first. </p>
             <a href="/resume.html" target="_blank" rel="noopener noreferrer">
-              <Button variant="cta" size="cta" className="cursor-target mt-6 max-sm:mt-8 rounded-2xl h-[48px]">
+              <Button variant="cta" size="cta" className="cursor-target mt-6 max-sm:mt-8 rounded-2xl h-[40px] text-sm px-5">
                 <Download className="mr-2 h-4 w-4" />
                 Resume
               </Button>
