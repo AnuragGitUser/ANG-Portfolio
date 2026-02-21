@@ -9,6 +9,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
+import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import TargetCursor from "./components/TargetCursor";
 import NavigationDock from "./components/NavigationDock";
@@ -27,6 +28,7 @@ const App = () => <QueryClientProvider client={queryClient}>
                 <AboutSection />
                 <SkillsSection />
                 <ProjectsSection />
+                <ExperienceSection />
               </main>
               <Footer />
               <NavigationDock />
