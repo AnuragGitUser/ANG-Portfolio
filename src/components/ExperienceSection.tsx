@@ -39,9 +39,14 @@ const ExperienceSection = () => {
                       <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
                         <Briefcase className="w-5 h-5 text-primary" />
                       </div>
-                      <h3 className="text-xl font-semibold relative overflow-hidden">
-                        <span className="relative z-10">{exp.role}</span>
-                        <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[linear-gradient(105deg,transparent_30%,hsl(var(--foreground)/0.08)_45%,hsl(var(--foreground)/0.15)_50%,hsl(var(--foreground)/0.08)_55%,transparent_70%)] bg-[length:200%_100%] group-hover:animate-[shine_1.5s_ease-in-out] pointer-events-none" />
+                      <h3
+                        className="text-xl font-semibold bg-clip-text text-transparent bg-[length:200%_100%] group-hover:animate-[shine_1.5s_ease-in-out]"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(105deg, hsl(var(--foreground)) 40%, hsl(var(--muted-foreground)) 45%, hsl(var(--foreground)) 50%, hsl(var(--muted-foreground)) 55%, hsl(var(--foreground)) 60%)",
+                        }}
+                      >
+                        {exp.role}
                       </h3>
                     </div>
 
