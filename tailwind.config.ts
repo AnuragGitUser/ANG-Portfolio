@@ -93,7 +93,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'spin-slow': 'spin 20s linear infinite',
-				'shine': 'shine 2.5s ease-in-out',
+				'shine': 'shine 2.5s ease-in-out forwards',
 			},
 			keyframes: {
 				shine: {

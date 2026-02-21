@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Briefcase, Building2, Calendar, MapPin } from "lucide-react";
+import { Building2, Calendar, MapPin } from "lucide-react";
 
 const ExperienceSection = () => {
   const experiences = [
@@ -37,10 +37,10 @@ const ExperienceSection = () => {
                   <div className="space-y-4 flex-1">
                     <div className="flex items-center gap-3">
                       <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Briefcase className="w-5 h-5 text-primary" />
+                        <Building2 className="w-5 h-5 text-primary" />
                       </div>
                       <h3
-                        className="text-xl font-bold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out]"
+                        className="text-2xl font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards]"
                         style={{
                           backgroundImage:
                             "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
@@ -69,11 +69,9 @@ const ExperienceSection = () => {
 
                   {/* Right - Company & Duration */}
                   <div className="md:text-right space-y-3 flex-shrink-0">
-                    <div className="inline-flex items-center gap-2 md:flex-row-reverse group/company">
-                      <Building2 className="w-5 h-5 text-primary" />
-                      <span className="text-lg font-semibold relative">
+                    <div className="inline-flex items-center gap-2 md:flex-row-reverse">
+                      <span className="text-lg font-semibold">
                         {exp.company}
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary group-hover/company:w-full transition-all duration-500" />
                       </span>
                     </div>
 
