@@ -40,10 +40,10 @@ const ExperienceSection = () => {
                         <Briefcase className="w-5 h-5 text-primary" />
                       </div>
                       <h3
-                        className="text-xl font-semibold bg-clip-text text-transparent bg-[length:200%_100%] group-hover:animate-[shine_1.5s_ease-in-out]"
+                        className="text-xl font-bold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out]"
                         style={{
                           backgroundImage:
-                            "linear-gradient(105deg, hsl(var(--foreground)) 40%, hsl(var(--muted-foreground)) 45%, hsl(var(--foreground)) 50%, hsl(var(--muted-foreground)) 55%, hsl(var(--foreground)) 60%)",
+                            "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
                         }}
                       >
                         {exp.role}
