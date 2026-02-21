@@ -32,9 +32,6 @@ const ExperienceSection = () => {
                 key={index}
                 className="cursor-target p-8 hover:shadow-xl smooth-transition group relative overflow-hidden"
               >
-                {/* Shiny hover overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[linear-gradient(105deg,transparent_40%,hsl(var(--foreground)/0.03)_45%,hsl(var(--foreground)/0.06)_50%,hsl(var(--foreground)/0.03)_55%,transparent_60%)] bg-[length:200%_100%] group-hover:animate-[shine_1.5s_ease-in-out]" />
-
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                   {/* Left - Role */}
                   <div className="space-y-4 flex-1">
@@ -42,7 +39,10 @@ const ExperienceSection = () => {
                       <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
                         <Briefcase className="w-5 h-5 text-primary" />
                       </div>
-                      <h3 className="text-xl font-semibold">{exp.role}</h3>
+                      <h3 className="text-xl font-semibold relative overflow-hidden">
+                        <span className="relative z-10">{exp.role}</span>
+                        <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[linear-gradient(105deg,transparent_30%,hsl(var(--foreground)/0.08)_45%,hsl(var(--foreground)/0.15)_50%,hsl(var(--foreground)/0.08)_55%,transparent_70%)] bg-[length:200%_100%] group-hover:animate-[shine_1.5s_ease-in-out] pointer-events-none" />
+                      </h3>
                     </div>
 
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
