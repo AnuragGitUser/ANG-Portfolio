@@ -1,4 +1,4 @@
-import { Home, User, Wrench, Briefcase, Mail, Sun, Moon } from "lucide-react";
+import { Home, User, Wrench, Briefcase, Building2, Mail, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
@@ -20,6 +20,7 @@ const NavigationDock = () => {
     { icon: User, href: "#about", label: "About" },
     { icon: Wrench, href: "#skills", label: "Skills" },
     { icon: Briefcase, href: "#portfolio", label: "Portfolio" },
+    { icon: Building2, href: "#experience", label: "Experience", desktopOnly: true },
   ];
 
   const socialItems = [
@@ -42,7 +43,7 @@ const NavigationDock = () => {
           const Icon = item.icon;
           const isAbout = item.label === "About";
           return (
-            <DockIcon key={index} className={isAbout ? "hidden sm:flex" : ""}>
+            <DockIcon key={index} className={isAbout || (item as any).desktopOnly ? "hidden sm:flex" : ""}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <button

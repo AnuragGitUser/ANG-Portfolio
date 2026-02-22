@@ -36,7 +36,7 @@ const ExperienceSection = () => {
               return (
                 <Card
                   key={index}
-                  className="cursor-target p-8 hover:shadow-xl smooth-transition group relative overflow-hidden cursor-pointer"
+                  className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border-transparent hover:border-border"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -47,7 +47,7 @@ const ExperienceSection = () => {
                       </div>
                       <div className="flex items-center gap-2">
                         <h3
-                          className="text-2xl font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards]"
+                          className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards]"
                           style={{
                             backgroundImage:
                               "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
@@ -56,7 +56,7 @@ const ExperienceSection = () => {
                           {exp.role}
                         </h3>
                         <ChevronRight
-                          className={`w-5 h-5 text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 flex-shrink-0 ${isOpen ? "rotate-90" : ""}`}
+                          className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
                         />
                       </div>
                     </div>
