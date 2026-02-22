@@ -36,7 +36,7 @@ const ExperienceSection = () => {
               return (
                 <Card
                   key={index}
-                  className="cursor-target p-8 bg-transparent hover:bg-card/50 hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl"
+                  className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
