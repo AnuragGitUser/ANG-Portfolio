@@ -56,12 +56,29 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
     let activeTarget: Element | null = null;
     let currentLeaveHandler: (() => void) | null = null;
     let resumeTimeout: ReturnType<typeof setTimeout> | null = null;
+    let resizeObserver: ResizeObserver | null = null;
 
     const cleanupTarget = (target: Element) => {
       if (currentLeaveHandler) {
         target.removeEventListener('mouseleave', currentLeaveHandler);
       }
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+        resizeObserver = null;
+      }
       currentLeaveHandler = null;
+    };
+
+    const updateTargetCorners = () => {
+      if (!activeTarget || !cursorRef.current) return;
+      const rect = activeTarget.getBoundingClientRect();
+      const { borderWidth, cornerSize } = constants;
+      targetCornerPositionsRef.current = [
+        { x: rect.left - borderWidth, y: rect.top - borderWidth },
+        { x: rect.right + borderWidth - cornerSize, y: rect.top - borderWidth },
+        { x: rect.right + borderWidth - cornerSize, y: rect.bottom + borderWidth - cornerSize },
+        { x: rect.left - borderWidth, y: rect.bottom + borderWidth - cornerSize }
+      ];
     };
 
     gsap.set(cursor, {
@@ -190,6 +207,12 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
         { x: rect.right + borderWidth - cornerSize, y: rect.bottom + borderWidth - cornerSize },
         { x: rect.left - borderWidth, y: rect.bottom + borderWidth - cornerSize }
       ];
+
+      // Watch for size changes (e.g. accordion open/close)
+      resizeObserver = new ResizeObserver(() => {
+        updateTargetCorners();
+      });
+      resizeObserver.observe(target);
 
       isActiveRef.current = true;
       gsap.ticker.add(tickerFnRef.current!);
