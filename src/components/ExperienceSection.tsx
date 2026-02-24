@@ -45,7 +45,7 @@ const ExperienceSection = () => {
                       <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
                         <Building2 className="w-5 h-5 text-primary" />
                       </div>
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5">
                         <h3
                           className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards]"
                           style={{
@@ -56,7 +56,7 @@ const ExperienceSection = () => {
                           {exp.role}
                         </h3>
                         <ChevronRight
-                          className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                          className={`w-4 h-4 text-primary flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
                         />
                       </div>
                     </div>
