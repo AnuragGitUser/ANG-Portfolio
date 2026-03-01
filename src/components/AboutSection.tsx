@@ -41,7 +41,7 @@ const AboutSection = () => {
                 <ShinyText
                   text="OPEN TO WORK"
                   speed={3}
-                  className="text-sm font-bold tracking-wider"
+                  className="text-base font-bold tracking-wider"
                   color="hsl(var(--muted-foreground))"
                   shineColor="hsl(var(--foreground))"
                   spread={120}
