@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Code, Cloud } from "lucide-react";
+import ShinyText from "@/components/ShinyText";
 const AboutSection = () => {
   const features = [{
     title: "Frontend Development",
@@ -29,12 +30,24 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h2 className="heading-text">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed text-left">Computer Engineering undergrad with expertise in Java, Python & C/C++. Passionate about full-stack web development, AI technologies & cloud computing. I craft exceptional digital experiences that are fast, accessible, visually appealing & responsive. Experienced in building collaborative web applications & data analysis tools with a strong foundation in OOP & DSA. I explore concepts in entrepreneurship, AI & Software Engineering. I build scalable, open-source systems empowering communities and solving real-world problems, impact-first. </p>
-            <a href="/resume.html" target="_blank" rel="noopener noreferrer">
-              <Button variant="cta" size="cta" className="cursor-target mt-4 rounded-2xl">
-                <Download className="mr-2 h-4 w-4" />
-                Resume
-              </Button>
-            </a>
+            <div className="flex items-center gap-4 mt-4 flex-wrap">
+              <a href="/resume.html" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="cta" className="cursor-target rounded-2xl">
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </Button>
+              </a>
+              <div className="cursor-target px-5 py-2.5 rounded-full border border-foreground/20 bg-foreground/5 backdrop-blur-sm">
+                <ShinyText
+                  text="OPEN TO WORK"
+                  speed={3}
+                  className="text-sm font-bold tracking-wider"
+                  color="hsl(var(--muted-foreground))"
+                  shineColor="hsl(var(--foreground))"
+                  spread={120}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Features */}
