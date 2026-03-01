@@ -46,7 +46,7 @@ const AboutSection = () => {
                   speed={3}
                   className="text-base font-bold tracking-wider"
                   color={isDark ? "hsl(var(--muted-foreground))" : "#222222"}
-                  shineColor={isDark ? "hsl(var(--foreground))" : "#000000"}
+                  shineColor={isDark ? "hsl(var(--foreground))" : "#8c8c8c"}
                   spread={120}
                 />
               </div>
