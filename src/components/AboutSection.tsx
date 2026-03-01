@@ -2,7 +2,10 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Code, Cloud } from "lucide-react";
 import ShinyText from "@/components/ShinyText";
+import { useTheme } from "next-themes";
 const AboutSection = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   const features = [{
     title: "Frontend Development",
     description: "Building end-to-end web applications with modern technologies and cloud integration.",
@@ -42,8 +45,8 @@ const AboutSection = () => {
                   text="OPEN TO WORK"
                   speed={3}
                   className="text-base font-bold tracking-wider"
-                  color="hsl(var(--muted-foreground))"
-                  shineColor="hsl(var(--foreground))"
+                  color={isDark ? "hsl(var(--muted-foreground))" : "#222222"}
+                  shineColor={isDark ? "hsl(var(--foreground))" : "#000000"}
                   spread={120}
                 />
               </div>
