@@ -36,7 +36,7 @@ const ExperienceSection = () => {
               return (
                 <Card
                   key={index}
-                  className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl"
+                  className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl md:mx-16 lg:mx-24"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -83,7 +83,7 @@ const ExperienceSection = () => {
                         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="pt-6 ml-14 space-y-4">
+                        <div className="pt-3 ml-14 space-y-3">
 
                           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
                             {exp.description}
