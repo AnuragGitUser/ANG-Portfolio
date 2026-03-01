@@ -37,7 +37,7 @@ const AboutSection = () => {
                   Resume
                 </Button>
               </a>
-              <div className="cursor-target px-5 py-2.5 rounded-full border border-foreground/20 bg-foreground/5 backdrop-blur-sm">
+              <div className="cursor-target px-5 py-2.5 rounded-full border border-white bg-foreground/5 backdrop-blur-sm">
                 <ShinyText
                   text="OPEN TO WORK"
                   speed={3}
