@@ -39,37 +39,42 @@ const ExperienceSection = () => {
                   className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl md:mx-16 lg:mx-24"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Building2 className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <div>
-                        <h3
-                          className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
-                          style={{
-                            backgroundImage:
-                              "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
-                          }}
-                        >
-                          {exp.role}
-                        </h3>
-                        <ChevronRight
-                          className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
-                        />
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    {/* Left - Role & Duration */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Building2 className="w-5 h-5 text-primary" />
                       </div>
-                      <span className="text-lg font-semibold block mt-0.5">
-                        {exp.company}
-                      </span>
-                      <div className="flex items-center gap-4 text-muted-foreground text-sm mt-1">
-                        <div className="flex items-center gap-1.5">
+                      <div>
+                        <div>
+                          <h3
+                            className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
+                            style={{
+                              backgroundImage:
+                                "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
+                            }}
+                          >
+                            {exp.role}
+                          </h3>
+                          <ChevronRight
+                            className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                          />
+                        </div>
+                        <div className="flex items-center gap-1.5 text-muted-foreground text-sm mt-1">
                           <Calendar className="w-4 h-4" />
                           <span>{exp.duration}</span>
                         </div>
-                        <div className="flex items-center gap-1.5">
-                          <MapPin className="w-4 h-4" />
-                          <span>Mumbai, India</span>
-                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right - Company & Location */}
+                    <div className="md:text-right flex-shrink-0 ml-14 md:ml-0">
+                      <span className="text-lg font-semibold block">
+                        {exp.company}
+                      </span>
+                      <div className="flex items-center gap-1.5 md:justify-end text-muted-foreground text-sm mt-1">
+                        <MapPin className="w-4 h-4" />
+                        <span>Mumbai, India</span>
                       </div>
                     </div>
                   </div>
