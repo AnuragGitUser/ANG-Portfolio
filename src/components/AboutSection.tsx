@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Code, Cloud } from "lucide-react";
+import { Download, Code, Cloud, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import ShinyText from "@/components/ShinyText";
 import { useTheme } from "next-themes";
 const AboutSection = () => {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const features = [{
     title: "Frontend Development",
     description: "Building end-to-end web applications with modern technologies and cloud integration.",
@@ -55,17 +58,41 @@ const AboutSection = () => {
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {features.map((feature, index) => <Card key={index} className="cursor-target p-5 lg:p-6 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden border border-foreground/20 hover:border-foreground/50 rounded-2xl">
-                <div className="flex items-start gap-4">
-                  <div className="w-11 h-11 lg:w-12 lg:h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
+            {features.map((feature, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <Card key={index} className="cursor-target p-5 lg:p-6 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden border border-foreground/20 hover:border-foreground/50 rounded-2xl cursor-pointer"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 lg:w-12 lg:h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
+                      <feature.icon className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
+                    </div>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center">
+                        <h3 className="subheading-text">{feature.title}</h3>
+                        <ChevronRight
+                          className={`w-4 h-4 text-primary ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                        />
+                      </div>
+                      <AnimatePresence>
+                        {isOpen && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                            className="overflow-hidden"
+                          >
+                            <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{feature.description}</p>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   </div>
-                  <div className="space-y-1.5">
-                    <h3 className="subheading-text">{feature.title}</h3>
-                    <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">{feature.description}</p>
-                  </div>
-                </div>
-              </Card>)}
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>
