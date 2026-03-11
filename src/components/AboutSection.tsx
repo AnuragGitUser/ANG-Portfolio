@@ -55,7 +55,7 @@ const AboutSection = () => {
 
           {/* Features */}
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {features.map((feature, index) => <Card key={index} className="cursor-target p-5 lg:p-6 hover:shadow-lg smooth-transition">
+            {features.map((feature, index) => <Card key={index} className="cursor-target p-5 lg:p-6 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden border border-foreground/20 hover:border-foreground/50 rounded-2xl">
                 <div className="flex items-start gap-4">
                   <div className="w-11 h-11 lg:w-12 lg:h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
