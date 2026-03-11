@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Code, Cloud } from "lucide-react";
+import { Download, Code, Cloud, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import ShinyText from "@/components/ShinyText";
 import { useTheme } from "next-themes";
 const AboutSection = () => {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const features = [{
     title: "Frontend Development",
     description: "Building end-to-end web applications with modern technologies and cloud integration.",
