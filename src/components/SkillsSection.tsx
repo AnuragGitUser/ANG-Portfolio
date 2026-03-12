@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Coffee, Settings, Code, GitBranch, Monitor } from "lucide-react";
+import { Coffee, Settings, Code, GitBranch, Wrench } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [{
     title: "Languages",
@@ -14,12 +14,12 @@ const SkillsSection = () => {
     skills: ["Git", "GitHub", "Vercel"],
     icon: GitBranch
   }, {
-    title: "IDEs",
-    skills: ["VS Code", "IntelliJ IDEA", "PyCharm"],
-    icon: Monitor
+    title: "Tools",
+    skills: ["VS Code", "IntelliJ IDEA", "PyCharm", "Supabase", "Framer Motion", "Google Cloud"],
+    icon: Wrench
   }, {
     title: "Concepts",
-    skills: ["OOP", "DSA", "Functional Programming"],
+    skills: ["OOP", "DSA", "Functional Programming", "Dynamic Programming"],
     icon: Code
   }];
   return <section id="skills" className="pt-8 pb-24 overflow-hidden relative">
