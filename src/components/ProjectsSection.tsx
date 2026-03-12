@@ -14,7 +14,7 @@ const ProjectsSection = () => {
     description: "Built DocCollab, a web-app for collaboration of documents over cloud with real-time editing and sharing capabilities.",
     technologies: ["Cloud Computing", "Web Development", "JavaScript"],
     codeUrl: "https://github.com/AnuragGitUser",
-    demoUrl: "#"
+    demoUrl: "https://ijarsct.co.in/Paper27635.pdf"
   }, {
     title: "Glassmorphism Scientific Calculator",
     description: "Experimenting with various JavaScript effects combined with HTML and CSS to create a modern glass-morphism calculator interface.",
