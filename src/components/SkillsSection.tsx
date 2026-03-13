@@ -6,10 +6,6 @@ const SkillsSection = () => {
     skills: ["Java", "Python", "C", "C++", "HTML", "CSS"],
     icon: Coffee
   }, {
-    title: "Technologies",
-    skills: ["Linux", "MS Office"],
-    icon: Settings
-  }, {
     title: "Version Control",
     skills: ["Git", "GitHub", "Vercel"],
     icon: GitBranch
