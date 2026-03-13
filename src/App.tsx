@@ -13,6 +13,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import TargetCursor from "./components/TargetCursor";
 import NavigationDock from "./components/NavigationDock";
+import MarqueeSection from "./components/MarqueeSection";
 const queryClient = new QueryClient();
 const App = () => <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
@@ -25,6 +26,7 @@ const App = () => <QueryClientProvider client={queryClient}>
               <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
               <main>
                 <HeroSection />
+                <MarqueeSection />
                 <AboutSection />
                 <SkillsSection />
                 <ProjectsSection />
