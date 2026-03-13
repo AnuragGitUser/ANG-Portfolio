@@ -13,6 +13,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import TargetCursor from "./components/TargetCursor";
 import NavigationDock from "./components/NavigationDock";
+import MarqueeSection from "./components/MarqueeSection";
 const queryClient = new QueryClient();
 const App = () => <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
