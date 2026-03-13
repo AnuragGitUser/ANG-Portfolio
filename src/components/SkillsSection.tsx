@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Coffee, Settings, Code, GitBranch, Wrench } from "lucide-react";
+import { Coffee, Code, GitMerge, Wrench } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [{
     title: "Languages",
