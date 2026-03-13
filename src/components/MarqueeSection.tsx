@@ -1,13 +1,13 @@
 import { Marquee } from "@/components/ui/marquee";
 
 const logos = [
-  { src: "/logos/java.svg", alt: "Java logo" },
-  { src: "/logos/python.svg", alt: "Python logo" },
-  { src: "/logos/react.svg", alt: "React logo" },
-  { src: "/logos/typescript.svg", alt: "TypeScript logo" },
-  { src: "/logos/cplusplus.svg", alt: "C++ logo" },
-  { src: "/logos/git.svg", alt: "Git logo" },
+  { src: "/logos/vercel.svg", alt: "Vercel logo" },
   { src: "/logos/googlecloud.svg", alt: "Google Cloud logo" },
+  { src: "/logos/framer.svg", alt: "Framer logo" },
+  { src: "/logos/discord.svg", alt: "Discord logo" },
+  { src: "/logos/openai.svg", alt: "OpenAI logo" },
+  { src: "/logos/linear.svg", alt: "Linear logo" },
+  { src: "/logos/cursor.svg", alt: "Cursor logo" },
 ];
 
 const MarqueeSection = () => {
@@ -21,7 +21,7 @@ const MarqueeSection = () => {
             alt={logo.alt}
             width={96}
             height={96}
-            className="mx-8 h-24 w-24 object-contain opacity-70 dark:invert-0 pointer-events-none select-none"
+            className="mx-8 h-24 w-24 object-contain opacity-70 dark:invert pointer-events-none select-none"
           />
         ))}
       </Marquee>
