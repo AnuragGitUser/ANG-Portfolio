@@ -8,7 +8,7 @@ const SkillsSection = () => {
   }, {
     title: "Version Control",
     skills: ["Git", "GitHub", "Vercel"],
-    icon: GitBranch
+    icon: GitMerge
   }, {
     title: "Tools",
     skills: ["VS Code", "IntelliJ IDEA", "PyCharm", "Supabase", "Framer Motion", "Google Cloud"],
