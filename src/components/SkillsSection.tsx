@@ -28,7 +28,7 @@ const SkillsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"> gap-8">
             {skillCategories.map((category, index) => <div key={index} className="space-y-4">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center">
