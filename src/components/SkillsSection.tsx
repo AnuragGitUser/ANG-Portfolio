@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Coffee, Code, GitMerge, Wrench } from "lucide-react";
+import { Coffee, Code, Settings, Wrench } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [{
     title: "Languages",
@@ -8,7 +8,7 @@ const SkillsSection = () => {
   }, {
     title: "Version Control",
     skills: ["Git", "GitHub", "Vercel"],
-    icon: GitMerge
+    icon: Settings
   }, {
     title: "Tools",
     skills: ["VS Code", "IntelliJ IDEA", "PyCharm", "Supabase", "Framer Motion", "Google Cloud"],
