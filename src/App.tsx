@@ -26,6 +26,7 @@ const App = () => <QueryClientProvider client={queryClient}>
               <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
               <main>
                 <HeroSection />
+                <MarqueeSection />
                 <AboutSection />
                 <SkillsSection />
                 <ProjectsSection />
