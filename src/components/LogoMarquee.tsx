@@ -7,7 +7,7 @@ const logos = [
   { src: "/logos/discord.svg", alt: "Discord logo" },
   { src: "/logos/openai.svg", alt: "OpenAI logo" },
   { src: "/logos/linear.svg", alt: "Linear logo" },
-  { src: "/logos/opensea.svg", alt: "OpenSea logo" },
+  
   { src: "/logos/cursor.svg", alt: "Cursor logo" },
 ];
 
