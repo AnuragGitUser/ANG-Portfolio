@@ -13,7 +13,7 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="py-8">
+    <section className="py-2 -mt-8">
       <Marquee className="flex py-4" duration={20}>
         {logos.map((logo) => (
           <img
