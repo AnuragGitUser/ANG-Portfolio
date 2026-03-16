@@ -34,72 +34,71 @@ const ExperienceSection = () => {
             {experiences.map((exp, index) => {
               const isOpen = openIndex === index;
               return (
-                <Card
-                  key={index}
-                  className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl md:mx-16 lg:mx-24"
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    {/* Left - Role & Duration */}
-                    <div className="flex items-center gap-3">
-                      <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Building2 className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
+                <div key={index} className="relative md:mx-16 lg:mx-24">
+                  <Card
+                    className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                  >
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                      {/* Left - Role & Duration */}
+                      <div className="flex items-center gap-3">
+                        <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Building2 className="w-5 h-5 text-primary" />
+                        </div>
                         <div>
-                          <h3
-                            className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
-                            style={{
-                              backgroundImage:
-                                "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
-                            }}
-                          >
-                            {exp.role}
-                          </h3>
-                          <ChevronRight
-                            className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
-                          />
+                          <div>
+                            <h3
+                              className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
+                              style={{
+                                backgroundImage:
+                                  "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
+                              }}
+                            >
+                              {exp.role}
+                            </h3>
+                            <ChevronRight
+                              className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                            />
+                          </div>
+                          <div className="flex items-center gap-1.5 text-muted-foreground text-sm mt-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>{exp.duration}</span>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-1.5 text-muted-foreground text-sm mt-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{exp.duration}</span>
+                      </div>
+
+                      {/* Right - Company & Location */}
+                      <div className="md:text-right flex-shrink-0 ml-14 md:ml-0">
+                        <span className="text-lg font-semibold block">
+                          {exp.company}
+                        </span>
+                        <div className="flex items-center gap-1.5 md:justify-end text-muted-foreground text-sm mt-1">
+                          <MapPin className="w-4 h-4" />
+                          <span>Mumbai, India</span>
                         </div>
                       </div>
                     </div>
+                  </Card>
 
-                    {/* Right - Company & Location */}
-                    <div className="md:text-right flex-shrink-0 ml-14 md:ml-0">
-                      <span className="text-lg font-semibold block">
-                        {exp.company}
-                      </span>
-                      <div className="flex items-center gap-1.5 md:justify-end text-muted-foreground text-sm mt-1">
-                        <MapPin className="w-4 h-4" />
-                        <span>Mumbai, India</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Expandable content */}
+                  {/* Expandable content - overlays below without pushing footer */}
                   <AnimatePresence>
                     {isOpen && (
                       <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                        className="overflow-hidden"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                        className="absolute left-0 right-0 top-full z-20 mt-1"
                       >
-                        <div className="pt-3 ml-14 space-y-3">
-
+                        <div className="p-6 ml-14 bg-card border border-border rounded-xl shadow-lg">
                           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
                             {exp.description}
                           </p>
-
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </Card>
+                </div>
               );
             })}
           </div>
