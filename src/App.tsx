@@ -24,7 +24,7 @@ const App = () => <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path="/" element={<div className="min-h-screen grid-background">
               <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
-              <main className="pb-40">
+              <main>
                 <HeroSection />
                 <LogoMarquee />
                 <AboutSection />

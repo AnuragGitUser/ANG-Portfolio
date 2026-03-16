@@ -23,7 +23,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding overflow-hidden relative">
+    <section id="experience" className="section-padding overflow-hidden relative min-h-[420px]">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
