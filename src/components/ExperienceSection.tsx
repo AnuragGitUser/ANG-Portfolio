@@ -23,14 +23,14 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding overflow-hidden relative min-h-[420px]">
+    <section id="experience" className="section-padding overflow-hidden relative">
       <div className="section-container">
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="heading-text">Experience</h2>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 h-[260px] md:h-[220px]">
             {experiences.map((exp, index) => {
               const isOpen = openIndex === index;
               return (
