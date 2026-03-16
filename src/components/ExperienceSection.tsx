@@ -89,7 +89,7 @@ const ExperienceSection = () => {
                         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="pt-3 ml-14 space-y-3">
+                        <div className="pt-3 ml-14 space-y-3 absolute left-8 right-8 bg-card rounded-b-2xl pb-6">
 
                           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
                             {exp.description}
