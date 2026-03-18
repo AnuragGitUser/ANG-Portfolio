@@ -13,19 +13,21 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="py-8">
-      <Marquee className="flex py-4" duration={20}>
-        {logos.map((logo) => (
-          <img
-            key={logo.src}
-            src={logo.src}
-            alt={logo.alt}
-            width={96}
-            height={96}
-            className="mx-8 h-24 w-24 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
-          />
-        ))}
-      </Marquee>
+    <section className="py-8 flex justify-center">
+      <div className="w-full max-w-3xl">
+        <Marquee className="flex py-4" duration={14}>
+          {logos.map((logo) => (
+            <img
+              key={logo.src}
+              src={logo.src}
+              alt={logo.alt}
+              width={80}
+              height={80}
+              className="mx-5 h-20 w-20 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
+            />
+          ))}
+        </Marquee>
+      </div>
     </section>
   );
 };
