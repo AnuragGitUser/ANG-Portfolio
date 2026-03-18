@@ -23,7 +23,7 @@ const LogoMarquee = () => {
               alt={logo.alt}
               width={80}
               height={80}
-              className="mx-5 h-20 w-20 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
+              className="mx-10 h-20 w-20 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
             />
           ))}
         </Marquee>
