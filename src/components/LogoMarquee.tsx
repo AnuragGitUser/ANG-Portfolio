@@ -15,15 +15,15 @@ const LogoMarquee = () => {
   return (
     <section className="py-8">
       <div className="section-container px-6 md:px-12 lg:px-16">
-        <Marquee className="flex py-4" duration={14}>
-          {logos.map((logo) => (
+        <Marquee className="flex py-4" duration={20}>
+          {[...logos, ...logos, ...logos].map((logo, i) => (
             <img
-              key={logo.src}
+              key={`${logo.src}-${i}`}
               src={logo.src}
               alt={logo.alt}
-              width={80}
-              height={80}
-              className="mx-10 h-20 w-20 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
+              width={96}
+              height={96}
+              className="mx-10 h-24 w-24 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
             />
           ))}
         </Marquee>
