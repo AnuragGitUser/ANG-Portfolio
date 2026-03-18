@@ -13,8 +13,8 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="py-8 flex justify-center">
-      <div className="w-full max-w-3xl">
+    <section className="py-8">
+      <div className="section-container px-6 md:px-12 lg:px-16">
         <Marquee className="flex py-4" duration={14}>
           {logos.map((logo) => (
             <img
