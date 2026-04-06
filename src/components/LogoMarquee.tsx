@@ -2,12 +2,11 @@ import { Marquee } from "@/components/ui/marquee";
 
 const logos = [
   { src: "/logos/vercel.svg", alt: "Vercel logo" },
-  { src: "/logos/google.svg", alt: "Google logo" },
+  { src: "/logos/google-cloud-light.png", srcDark: "/logos/google-cloud-dark.png", alt: "Google Cloud logo" },
   { src: "/logos/framer.svg", alt: "Framer logo" },
   { src: "/logos/discord.svg", alt: "Discord logo" },
   { src: "/logos/openai.svg", alt: "OpenAI logo" },
   { src: "/logos/linear.svg", alt: "Linear logo" },
-  
   { src: "/logos/cursor.svg", alt: "Cursor logo" },
 ];
 
