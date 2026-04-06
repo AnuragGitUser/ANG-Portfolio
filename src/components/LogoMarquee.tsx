@@ -17,9 +17,9 @@ const LogoMarquee = () => {
         <Marquee className="flex py-4" duration={20}>
           {[...logos, ...logos, ...logos].map((logo, i) => (
             logo.srcDark ? (
-              <span key={`${logo.src}-${i}`} className="mx-10 h-24 w-32 shrink-0 inline-flex items-center justify-center pointer-events-none select-none">
-                <img src={logo.src} alt={logo.alt} className="h-16 object-contain opacity-70 dark:hidden" />
-                <img src={logo.srcDark} alt={logo.alt} className="h-16 object-contain opacity-70 hidden dark:block" />
+              <span key={`${logo.src}-${i}`} className="mx-10 h-24 w-32 shrink-0 inline-flex items-center justify-center pointer-events-none select-none translate-y-1">
+                <img src={logo.src} alt={logo.alt} className="h-20 object-contain opacity-70 dark:hidden" />
+                <img src={logo.srcDark} alt={logo.alt} className="h-20 object-contain opacity-70 hidden dark:block" />
               </span>
             ) : (
               <img
