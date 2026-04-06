@@ -12,7 +12,7 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="py-8 -mt-60">
+    <section className="py-8 -mt-56">
       <div className="section-container px-6 md:px-12 lg:px-16">
         <Marquee className="flex py-4" duration={20}>
           {[...logos, ...logos, ...logos].map((logo, i) => (
