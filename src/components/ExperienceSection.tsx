@@ -8,8 +8,8 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      role: "Junior Software Engineer",
-      company: "Apmosys Technologies",
+      role: "Trainee Software Engineer",
+      company: "ApMoSys Technologies Pvt. Ltd.",
       duration: "Apr 2026 - Present",
       location: "On-site",
       description:
