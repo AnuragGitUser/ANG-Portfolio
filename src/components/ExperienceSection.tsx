@@ -74,7 +74,7 @@ const ExperienceSection = () => {
                       </span>
                       <div className="flex items-center gap-1.5 md:justify-end text-muted-foreground text-sm mt-1">
                         <MapPin className="w-4 h-4" />
-                        <span>Mumbai, India</span>
+                        <span>Navi Mumbai, India</span>
                       </div>
                     </div>
                   </div>
