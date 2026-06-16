@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Briefcase, Calendar, ChevronRight, MapPin } from "lucide-react";
+import { Calendar, ChevronRight, MapPin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ExperienceSection = () => {
@@ -42,9 +42,6 @@ const ExperienceSection = () => {
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     {/* Left - Role & Duration */}
                     <div className="flex items-center gap-3">
-                      <div className="w-11 h-11 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Briefcase className="w-5 h-5 text-primary" />
-                      </div>
                       <div>
                         <div>
                           <h3
@@ -89,7 +86,7 @@ const ExperienceSection = () => {
                         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="pt-3 ml-14">
+                        <div className="pt-3">
                           <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
                             {exp.description}
                           </p>
