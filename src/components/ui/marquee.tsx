@@ -47,7 +47,7 @@ export function Marquee({
       {...props}
     >
       <div
-        className={cn("flex", isVertical && "flex-col")}
+        className={cn("flex items-center", isVertical && "flex-col")}
         style={{
           animation: `${animationName} ${duration}s linear infinite`,
           animationPlayState: isPaused ? "paused" : "running",

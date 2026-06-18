@@ -21,8 +21,8 @@ const LogoMarquee = () => {
               key={`${logo.src}-${i}`}
               src={logo.src}
               alt={logo.alt}
-              className={`mx-10 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none ${
-                logo.wide ? "h-10 w-auto" : "h-24 w-24"
+              className={`mx-10 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none self-center ${
+                logo.wide ? "h-7 w-auto" : "h-24 w-24"
               }`}
             />
           ))}
