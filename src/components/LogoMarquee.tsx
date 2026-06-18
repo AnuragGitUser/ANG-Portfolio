@@ -1,9 +1,11 @@
 import { Marquee } from "@/components/ui/marquee";
+import googleCloud from "@/assets/google-cloud-white.png.asset.json";
 
 const logos = [
   { src: "/logos/vercel.svg", alt: "Vercel logo" },
   { src: "/logos/framer.svg", alt: "Framer logo" },
   { src: "/logos/discord.svg", alt: "Discord logo" },
+  { src: googleCloud.url, alt: "Google Cloud logo", wide: true },
   { src: "/logos/openai.svg", alt: "OpenAI logo" },
   { src: "/logos/linear.svg", alt: "Linear logo" },
   { src: "/logos/cursor.svg", alt: "Cursor logo" },
@@ -19,9 +21,9 @@ const LogoMarquee = () => {
               key={`${logo.src}-${i}`}
               src={logo.src}
               alt={logo.alt}
-              width={96}
-              height={96}
-              className="mx-10 h-24 w-24 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none"
+              className={`mx-10 object-contain opacity-70 dark:invert-0 invert pointer-events-none select-none ${
+                logo.wide ? "h-10 w-auto" : "h-24 w-24"
+              }`}
             />
           ))}
         </Marquee>
