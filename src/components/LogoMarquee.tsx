@@ -1,11 +1,10 @@
 import { Marquee } from "@/components/ui/marquee";
-import googleCloud from "@/assets/google-cloud-white.png.asset.json";
 
 const logos = [
   { src: "/logos/vercel.svg", alt: "Vercel logo" },
   { src: "/logos/framer.svg", alt: "Framer logo" },
   { src: "/logos/discord.svg", alt: "Discord logo" },
-  { src: googleCloud.url, alt: "Google Cloud logo", wide: true },
+  { src: "/logos/google-cloud.png", alt: "Google Cloud logo", wide: true },
   { src: "/logos/openai.svg", alt: "OpenAI logo" },
   { src: "/logos/linear.svg", alt: "Linear logo" },
   { src: "/logos/cursor.svg", alt: "Cursor logo" },
