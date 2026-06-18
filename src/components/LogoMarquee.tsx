@@ -2,7 +2,6 @@ import { Marquee } from "@/components/ui/marquee";
 
 const logos = [
   { src: "/logos/vercel.svg", alt: "Vercel logo" },
-  { src: "/logos/google-cloud-light.png", srcDark: "/logos/google-cloud-dark.png", alt: "Google Cloud logo" },
   { src: "/logos/framer.svg", alt: "Framer logo" },
   { src: "/logos/discord.svg", alt: "Discord logo" },
   { src: "/logos/openai.svg", alt: "OpenAI logo" },
@@ -12,7 +11,7 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="py-4 my-2">
+    <section className="py-2 my-1">
       <div className="section-container px-6 md:px-12 lg:px-16">
         <Marquee className="flex py-4" duration={28}>
           {[...logos, ...logos, ...logos].map((logo, i) => (

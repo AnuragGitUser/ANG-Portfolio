@@ -65,11 +65,11 @@ const ExperienceSection = () => {
                     </div>
 
                     {/* Right - Company & Location */}
-                    <div className="md:text-right flex-shrink-0 ml-14 md:ml-0">
+                    <div className="text-left md:text-right flex-shrink-0">
                       <span className="text-lg font-semibold block">
                         {exp.company}
                       </span>
-                      <div className="flex items-center gap-1.5 md:justify-end text-muted-foreground text-sm mt-1">
+                      <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm mt-1">
                         <MapPin className="w-4 h-4" />
                         <span>Navi Mumbai, India</span>
                       </div>
