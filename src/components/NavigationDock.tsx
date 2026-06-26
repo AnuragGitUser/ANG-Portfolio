@@ -37,7 +37,7 @@ const NavigationDock = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:max-w-[calc(100vw-2rem)] max-sm:overflow-hidden">
+    <div data-default-cursor="true" className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:max-w-[calc(100vw-2rem)] max-sm:overflow-hidden">
       <Dock magnification={60} distance={100} direction="bottom" className="max-sm:!max-w-full">
         {navItems.map((item, index) => {
           const Icon = item.icon;
