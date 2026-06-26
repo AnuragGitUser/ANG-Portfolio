@@ -13,7 +13,7 @@ const ExperienceSection = () => {
       duration: "Apr 2026 - Present",
       location: "On-site",
       description:
-        "Contributing to software development projects, collaborating with cross-functional teams, and building scalable solutions using modern technologies.",
+        "Contributing to software development projects, collaborating with cross-functional teams, and building scalable solutions using modern technologies. I also participate in code reviews and agile sprints to ensure high-quality, production-ready deliverables.",
       highlights: [
         "Full-stack development with modern frameworks",
         "Agile methodology & collaborative development",
@@ -86,8 +86,8 @@ const ExperienceSection = () => {
                         transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="pt-3">
-                          <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
+                        <div className="pt-4 -mx-8 -mb-8 px-8 pb-8 bg-muted/40 dark:bg-muted/20 w-full">
+                          <p className="text-muted-foreground text-sm leading-relaxed w-full">
                             {exp.description}
                           </p>
                         </div>

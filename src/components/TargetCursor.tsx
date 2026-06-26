@@ -131,7 +131,19 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
 
     tickerFnRef.current = tickerFn;
 
-    const moveHandler = (e: MouseEvent) => moveCursor(e.clientX, e.clientY);
+    const isOverDefaultCursorArea = (x: number, y: number) => {
+      const el = document.elementFromPoint(x, y);
+      if (!el) return false;
+      return el.closest('[data-default-cursor]') !== null;
+    };
+
+    const moveHandler = (e: MouseEvent) => {
+      moveCursor(e.clientX, e.clientY);
+      if (cursorRef.current) {
+        const overDefault = isOverDefaultCursorArea(e.clientX, e.clientY);
+        gsap.set(cursorRef.current, { opacity: overDefault ? 0 : 1 });
+      }
+    };
     window.addEventListener('mousemove', moveHandler);
 
     const scrollHandler = () => {

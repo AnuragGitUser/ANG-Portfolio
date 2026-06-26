@@ -233,3 +233,9 @@
   from { transform: translateY(-50%); }
   to { transform: translateY(0); }
 }
+
+/* Restore default cursor over the dock area */
+[data-default-cursor],
+[data-default-cursor] * {
+  cursor: default !important;
+}

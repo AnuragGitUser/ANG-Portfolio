@@ -37,7 +37,7 @@ const NavigationDock = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:max-w-[calc(100vw-2rem)] max-sm:overflow-hidden">
+    <div data-default-cursor="true" className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-sm:max-w-[calc(100vw-2rem)] max-sm:overflow-hidden">
       <Dock magnification={60} distance={100} direction="bottom" className="max-sm:!max-w-full">
         {navItems.map((item, index) => {
           const Icon = item.icon;
@@ -48,7 +48,7 @@ const NavigationDock = () => {
                 <TooltipTrigger asChild>
                   <button
                     onClick={() => scrollToSection(item.href)}
-                    className="size-full rounded-full cursor-target flex items-center justify-center"
+                    className="size-full rounded-full flex items-center justify-center"
                   >
                     <Icon className="size-4" />
                   </button>
@@ -71,7 +71,7 @@ const NavigationDock = () => {
                 href="https://mail.google.com/mail/?view=cm&to=anuraggurubhetti@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-full rounded-full cursor-target flex items-center justify-center"
+                className="size-full rounded-full flex items-center justify-center"
               >
                 <Mail className="size-4" />
               </a>
@@ -90,7 +90,7 @@ const NavigationDock = () => {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="size-full rounded-full cursor-target flex items-center justify-center"
+                  className="size-full rounded-full flex items-center justify-center"
                 >
                   <img 
                     src={item.icon} 
@@ -114,7 +114,7 @@ const NavigationDock = () => {
             <TooltipTrigger asChild>
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="size-full rounded-full cursor-target flex items-center justify-center"
+                className="size-full rounded-full flex items-center justify-center"
               >
                 <Sun className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute size-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
