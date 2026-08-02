@@ -113,14 +113,11 @@
   }
 
   /* Hide default cursor globally for custom cursor */
+  html,
   body,
-  a,
-  button,
-  [role="button"],
-  input[type="submit"],
-  input[type="button"],
-  .cursor-target,
-  .cursor-target * {
+  *,
+  *::before,
+  *::after {
     cursor: none !important;
   }
 

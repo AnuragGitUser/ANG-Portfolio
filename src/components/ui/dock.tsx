@@ -108,7 +108,7 @@ const DockIcon = ({
       ref={ref}
       style={{ width }}
       className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center",
+        "flex aspect-square cursor-none items-center justify-center",
         className
       )}
       {...props}

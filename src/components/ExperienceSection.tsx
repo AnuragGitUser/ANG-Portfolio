@@ -87,7 +87,7 @@ const ExperienceSection = () => {
                         className="overflow-hidden"
                       >
                         <div className="pt-3">
-                          <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
+                          <p className="text-muted-foreground text-sm leading-relaxed w-full">
                             {exp.description}
                           </p>
                         </div>
