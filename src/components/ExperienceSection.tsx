@@ -40,35 +40,33 @@ const ExperienceSection = () => {
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    {/* Left - Role & Duration */}
-                    <div className="flex items-center gap-3">
+                    {/* Left - Role & Company */}
+                    <div className="flex-1">
                       <div>
-                        <div>
-                          <h3
-                            className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
-                            style={{
-                              backgroundImage:
-                                "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
-                            }}
-                          >
-                            {exp.role}
-                          </h3>
-                          <ChevronRight
-                            className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
-                          />
-                        </div>
-                        <div className="flex items-center gap-1.5 text-muted-foreground text-sm mt-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{exp.duration}</span>
-                        </div>
+                        <h3
+                          className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
+                          style={{
+                            backgroundImage:
+                              "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
+                          }}
+                        >
+                          {exp.role}
+                        </h3>
+                        <ChevronRight
+                          className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                        />
                       </div>
-                    </div>
-
-                    {/* Right - Company & Location */}
-                    <div className="text-left md:text-right flex-shrink-0">
-                      <span className="text-lg font-semibold block">
+                      <span className="text-lg font-semibold italic block mt-1">
                         {exp.company}
                       </span>
+                    </div>
+
+                    {/* Right - Duration & Location */}
+                    <div className="flex-1 text-left md:text-right">
+                      <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm">
+                        <Calendar className="w-4 h-4" />
+                        <span>{exp.duration}</span>
+                      </div>
                       <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm mt-1">
                         <MapPin className="w-4 h-4" />
                         <span>Navi Mumbai, India</span>
