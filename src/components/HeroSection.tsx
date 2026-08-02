@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-balance">Software Engineer (Manual Testing)</h2>
               <p className="text-muted-foreground max-w-lg">
-                Crafting robust Python apps with Java & C/C++, focused on security and scalability.
+                Functional Testing, Regression Testing, Smoke Testing, Black Box Testing, QA Testing, Jira, SFDC (Home Loan)
               </p>
             </div>
 
