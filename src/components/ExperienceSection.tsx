@@ -13,7 +13,7 @@ const ExperienceSection = () => {
       duration: "Apr 2026 - Present",
       location: "On-site",
       description:
-        "Contributing to software development projects, collaborating with cross-functional teams, and building scalable solutions using modern technologies.",
+        "Contributing to software development projects, collaborating with cross-functional teams, and building scalable solutions using modern technologies. Gaining hands-on experience in designing, developing, and deploying end-to-end applications while following industry best practices. Actively learning from senior engineers and applying new skills to real-world engineering challenges.",
       highlights: [
         "Full-stack development with modern frameworks",
         "Agile methodology & collaborative development",
