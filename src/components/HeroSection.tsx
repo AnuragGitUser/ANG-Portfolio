@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-balance">Software Engineer | Frontend Developer</h2>
+              <h2 className="text-2xl font-bold text-balance">Software Engineer (Manual Testing)</h2>
               <p className="text-muted-foreground max-w-lg">
                 Crafting robust Python apps with Java & C/C++, focused on security and scalability.
               </p>
