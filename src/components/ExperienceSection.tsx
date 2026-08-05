@@ -39,7 +39,7 @@ const ExperienceSection = () => {
                   className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl md:mx-16 lg:mx-24"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <div className="flex flex-col gap-1">
+                  <div className="flex flex-col gap-0.5">
                     {/* Top - Company & Location */}
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <span className="text-lg font-semibold block">
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div className="flex items-center gap-1">
                         <h3
-                          className="text-lg font-extrabold italic bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
+                          className="text-lg italic bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
                           style={{
                             backgroundImage:
                               "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
