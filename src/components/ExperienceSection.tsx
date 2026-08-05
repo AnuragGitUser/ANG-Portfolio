@@ -39,15 +39,27 @@ const ExperienceSection = () => {
                   className="cursor-target p-8 bg-transparent hover:bg-card hover:shadow-2xl transition-all duration-500 ease-in-out group relative overflow-hidden cursor-pointer border border-foreground/20 hover:border-foreground/50 rounded-2xl md:mx-16 lg:mx-24"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    {/* Left - Role & Company */}
-                    <div className="flex-1">
-                      <div>
+                  <div className="flex flex-col gap-4">
+                    {/* Top - Company & Location */}
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                      <span className="text-lg font-semibold block">
+                        {exp.company}
+                      </span>
+                      <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm">
+                        <MapPin className="w-4 h-4" />
+                        <span>Navi Mumbai, India</span>
+                      </div>
+                    </div>
+
+                    {/* Bottom - Role & Duration */}
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                      <div className="flex items-center gap-1">
                         <h3
-                          className="text-lg font-extrabold bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
+                          className="text-lg font-extrabold italic bg-clip-text text-transparent bg-[length:300%_100%] group-hover:animate-[shine_2.5s_ease-in-out_forwards] inline"
                           style={{
                             backgroundImage:
                               "linear-gradient(105deg, hsl(var(--foreground)) 30%, hsl(var(--muted-foreground)) 40%, white 50%, hsl(var(--muted-foreground)) 60%, hsl(var(--foreground)) 70%)",
+                            fontFamily: "'Times New Roman', Times, serif",
                           }}
                         >
                           {exp.role}
@@ -56,20 +68,9 @@ const ExperienceSection = () => {
                           className={`w-4 h-4 text-primary inline-block align-middle ml-1 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
                         />
                       </div>
-                      <span className="text-lg font-semibold italic block mt-1">
-                        {exp.company}
-                      </span>
-                    </div>
-
-                    {/* Right - Duration & Location */}
-                    <div className="flex-1 text-left md:text-right">
                       <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm">
                         <Calendar className="w-4 h-4" />
                         <span>{exp.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 justify-start md:justify-end text-muted-foreground text-sm mt-1">
-                        <MapPin className="w-4 h-4" />
-                        <span>Navi Mumbai, India</span>
                       </div>
                     </div>
                   </div>
