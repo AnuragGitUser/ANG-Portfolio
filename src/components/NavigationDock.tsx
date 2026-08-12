@@ -73,7 +73,7 @@ const NavigationDock = () => {
                 rel="noopener noreferrer"
                 className="size-full rounded-full cursor-target flex items-center justify-center"
               >
-                <Mail className="size-4" />
+                <Mail className="size-5" />
               </a>
             </TooltipTrigger>
             <TooltipContent>
