@@ -95,7 +95,7 @@ const NavigationDock = () => {
                   <img 
                     src={item.icon} 
                     alt={item.label} 
-                    className="size-4 brightness-0 dark:invert"
+                    className="size-5 brightness-0 dark:invert"
                   />
                 </a>
               </TooltipTrigger>
