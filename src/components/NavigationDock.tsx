@@ -50,7 +50,7 @@ const NavigationDock = () => {
                     onClick={() => scrollToSection(item.href)}
                     className="size-full rounded-full cursor-target flex items-center justify-center"
                   >
-                    <Icon className="size-4" />
+                    <Icon className="size-5" />
                   </button>
                 </TooltipTrigger>
                 <TooltipContent>
