@@ -76,7 +76,7 @@ export interface DockIconProps {
 }
 
 const DockIcon = ({
-  size = 32,
+  size = 34,
   magnification = DEFAULT_MAGNIFICATION,
   distance = DEFAULT_DISTANCE,
   mouseX,
