@@ -50,7 +50,7 @@ const NavigationDock = () => {
                     onClick={() => scrollToSection(item.href)}
                     className="size-full rounded-full cursor-target flex items-center justify-center"
                   >
-                    <Icon className="size-4" />
+                    <Icon className="size-5" />
                   </button>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -73,7 +73,7 @@ const NavigationDock = () => {
                 rel="noopener noreferrer"
                 className="size-full rounded-full cursor-target flex items-center justify-center"
               >
-                <Mail className="size-4" />
+                <Mail className="size-5" />
               </a>
             </TooltipTrigger>
             <TooltipContent>
@@ -95,7 +95,7 @@ const NavigationDock = () => {
                   <img 
                     src={item.icon} 
                     alt={item.label} 
-                    className="size-4 brightness-0 dark:invert"
+                    className="size-5 brightness-0 dark:invert"
                   />
                 </a>
               </TooltipTrigger>
@@ -116,8 +116,8 @@ const NavigationDock = () => {
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="size-full rounded-full cursor-target flex items-center justify-center"
               >
-                <Sun className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute size-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <Sun className="size-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 <span className="sr-only">Toggle theme</span>
               </button>
             </TooltipTrigger>

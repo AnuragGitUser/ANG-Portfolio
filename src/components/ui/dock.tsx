@@ -113,7 +113,7 @@ const DockIcon = ({
       )}
       {...props}
     >
-      <div className="flex items-center justify-center w-[94%] h-[94%] rounded-md hover:bg-accent transition-colors">
+      <div className="flex items-center justify-center w-[76%] h-[76%] rounded-md hover:bg-foreground/15 transition-colors">
         {children}
       </div>
     </motion.div>
