@@ -76,7 +76,7 @@ export interface DockIconProps {
 }
 
 const DockIcon = ({
-  size = 32,
+  size = 34,
   magnification = DEFAULT_MAGNIFICATION,
   distance = DEFAULT_DISTANCE,
   mouseX,
@@ -113,7 +113,7 @@ const DockIcon = ({
       )}
       {...props}
     >
-      <div className="flex items-center justify-center w-[80%] h-[80%] rounded-md hover:bg-accent transition-colors">
+      <div className="flex items-center justify-center w-[94%] h-[94%] rounded-md hover:bg-accent transition-colors">
         {children}
       </div>
     </motion.div>
